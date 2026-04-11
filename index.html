@@ -1,0 +1,3025 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KuanHsiang Liu (Kent) — Curriculum Vitæ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,200..900,0..100,0..1;1,9..144,200..900,0..100,0..1&family=Instrument+Serif:ital@0;1&family=Manrope:wght@200..800&family=JetBrains+Mono:ital,wght@0,300..700;1,300..700&family=Noto+Serif+Thai:wght@300..700&family=Noto+Sans+Thai:wght@300..700&family=Noto+Serif+TC:wght@300..700&family=Noto+Sans+TC:wght@300..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #14110d;
+    --ink-2: rgba(20, 17, 13, 0.74);
+    --ink-soft: rgba(20, 17, 13, 0.55);
+    --ink-faint: rgba(20, 17, 13, 0.3);
+    --ink-hair: rgba(20, 17, 13, 0.16);
+    --paper: #faf6ec;
+    --paper-2: #f3ecd6;
+    --paper-deep: #eae2c4;
+    --gold: #9c7a1e;
+    --gold-bright: #c9a961;
+    --gold-deep: #6e5216;
+    --rust: #8b3a1f;
+    --rust-deep: #6a2810;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    background: #1e1b15;
+    background-image: radial-gradient(ellipse at top, #2e2a1f, #141108);
+    min-height: 100%;
+  }
+
+  body {
+    font-family: 'Manrope', -apple-system, sans-serif;
+    font-weight: 340;
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding: 2.25rem 1rem;
+  }
+
+  ::selection { background: var(--gold-bright); color: var(--ink); }
+
+  /* ══════════════ LANGUAGE SWITCHER ══════════════ */
+  .lang-switch-inline {
+    position: absolute;
+    top: 6mm;
+    left: 10mm;
+    z-index: 6;
+    display: flex;
+    gap: 2px;
+    padding: 3px;
+    background: rgba(250, 246, 236, 0.96);
+    border: 0.75px solid rgba(20, 17, 13, 0.35);
+    border-radius: 999px;
+    box-shadow: 0 0.25rem 0.7rem rgba(20, 17, 13, 0.14);
+  }
+  .lang-btn {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 440;
+    font-size: 8.5pt;
+    padding: 1.4mm 3mm;
+    border: none;
+    background: transparent;
+    color: var(--ink);
+    cursor: pointer;
+    border-radius: 999px;
+    transition: all 0.3s cubic-bezier(.2,.7,.2,1);
+    letter-spacing: -0.005em;
+    line-height: 1;
+    min-width: 0;
+    text-decoration: none;
+    display: inline-block;
+  }
+  .lang-btn:hover { background: rgba(20, 17, 13, 0.08); }
+  .lang-btn.current {
+    background: var(--ink);
+    color: var(--paper);
+  }
+  .lang-btn[data-lang="th"] { font-family: 'Noto Serif Thai', 'Fraunces', serif; font-size: 9pt; }
+
+  /* Language groups */
+  .lang-group { display: none; }
+  .lang-group.active { display: block; }
+
+  /* Language-specific font fallbacks */
+  #lang-th { font-family: 'Manrope', 'Noto Sans Thai', sans-serif; }
+  #lang-th h1, #lang-th h2, #lang-th h3,
+  #lang-th .name, #lang-th .award-title, #lang-th .project-title,
+  #lang-th .job-title, #lang-th .tool, #lang-th .project-num,
+  #lang-th .job-years, #lang-th .award-num, #lang-th .section-head .roman,
+  #lang-th .section-head h2 {
+    font-family: 'Fraunces', 'Noto Serif Thai', serif;
+  }
+  #lang-th .tagline, #lang-th .job-org, #lang-th .closing .avail,
+  #lang-th .page-foot em, #lang-th .section-head h2 em, #lang-th .arc em {
+    font-family: 'Instrument Serif', 'Noto Serif Thai', serif;
+  }
+  #lang-th .mono, #lang-th .eyebrow, #lang-th .header-label,
+  #lang-th .role-lines dt, #lang-th .fact .lbl,
+  #lang-th .page-corner, #lang-th .page-foot {
+    font-family: 'JetBrains Mono', 'Noto Sans Thai', monospace;
+  }
+
+  #lang-zh { font-family: 'Manrope', 'Noto Sans TC', sans-serif; }
+  #lang-zh h1, #lang-zh h2, #lang-zh h3,
+  #lang-zh .name, #lang-zh .award-title, #lang-zh .project-title,
+  #lang-zh .job-title, #lang-zh .tool, #lang-zh .project-num,
+  #lang-zh .job-years, #lang-zh .award-num, #lang-zh .section-head .roman,
+  #lang-zh .section-head h2 {
+    font-family: 'Fraunces', 'Noto Serif TC', serif;
+  }
+  #lang-zh .tagline, #lang-zh .job-org, #lang-zh .closing .avail,
+  #lang-zh .page-foot em, #lang-zh .section-head h2 em, #lang-zh .arc em {
+    font-family: 'Instrument Serif', 'Noto Serif TC', serif;
+  }
+  #lang-zh .mono, #lang-zh .eyebrow, #lang-zh .header-label,
+  #lang-zh .role-lines dt, #lang-zh .fact .lbl,
+  #lang-zh .page-corner, #lang-zh .page-foot {
+    font-family: 'JetBrains Mono', 'Noto Sans TC', monospace;
+  }
+
+  /* ══════════════ A4 PAGE ══════════════ */
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto 2rem;
+    background: var(--paper);
+    padding: 16mm 18mm 20mm;
+    box-shadow:
+      0 2rem 5rem rgba(0,0,0,0.42),
+      0 0.25rem 1rem rgba(0,0,0,0.18);
+    position: relative;
+    font-size: 10pt;
+    line-height: 1.55;
+    color: var(--ink);
+  }
+  .page::before {
+    content: "";
+    position: absolute; inset: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/><feColorMatrix values='0 0 0 0 0.14 0 0 0 0 0.12 0 0 0 0 0.08 0 0 0 0.035 0'/></filter><rect width='240' height='240' filter='url(%23n)'/></svg>");
+    pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+  .page > * { position: relative; z-index: 1; }
+  .page > .lang-switch-inline { position: absolute; z-index: 6; }
+
+  .page-corner {
+    position: absolute;
+    top: 6mm; right: 10mm;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6.5pt;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    opacity: 0.7;
+    z-index: 2;
+  }
+  .page-foot {
+    position: absolute;
+    bottom: 9mm; left: 18mm; right: 18mm;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 2mm;
+    border-top: 1px solid var(--ink-hair);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    z-index: 2;
+  }
+  .page-foot em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0;
+    color: var(--rust);
+    font-size: 8.5pt;
+  }
+
+  /* ══════════════ TYPOGRAPHY ══════════════ */
+  h1, h2, h3 {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
+    font-weight: 400;
+    letter-spacing: -0.022em;
+    line-height: 1.08;
+  }
+  em {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+  }
+
+  /* ══════════════ HEADER ══════════════ */
+  .resume-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 10mm;
+    padding-bottom: 5mm;
+    border-bottom: 1.5px solid var(--ink);
+    margin-bottom: 7mm;
+    align-items: start;
+  }
+  .header-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 7pt;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 3.5mm;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+  }
+  .header-label::before {
+    content: "";
+    width: 10mm; height: 1px;
+    background: var(--rust);
+  }
+  .name {
+    font-size: 42pt;
+    line-height: 0.92;
+    letter-spacing: -0.035em;
+    color: var(--ink);
+    margin-bottom: 3mm;
+    font-weight: 380;
+  }
+  .name .paren {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    color: var(--rust);
+    font-weight: 320;
+  }
+  .tagline {
+    font-family: 'Instrument Serif', serif;
+    font-size: 14pt;
+    font-style: italic;
+    color: var(--gold-deep);
+    margin-bottom: 5mm;
+    letter-spacing: 0.005em;
+    line-height: 1.3;
+  }
+  .tagline .sep {
+    color: var(--gold);
+    margin: 0 0.25em;
+    font-style: normal;
+  }
+  .contact {
+    font-size: 8.5pt;
+    color: var(--ink-2);
+    line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1mm 3.5mm;
+    align-items: baseline;
+  }
+  .contact .sep {
+    color: var(--gold);
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 10pt;
+  }
+  .contact strong { font-weight: 540; color: var(--ink); }
+  .contact a { color: inherit; text-decoration: none; border-bottom: 0.5px dotted var(--gold); padding-bottom: 0.5px; }
+
+  .photo-frame {
+    position: relative;
+    width: 36mm;
+    flex-shrink: 0;
+  }
+  .photo-frame::before {
+    content: "";
+    position: absolute;
+    top: -1.8mm; left: -1.8mm;
+    right: 1.8mm; bottom: 1.8mm;
+    border: 1px solid var(--gold);
+    opacity: 0.75;
+    pointer-events: none;
+  }
+  .photo-frame img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    object-position: 50% 35%;
+    filter: contrast(1.04) saturate(0.92);
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ══════════════ SECTIONS ══════════════ */
+  section {
+    margin-bottom: 6.5mm;
+    page-break-inside: avoid;
+  }
+  .section-head {
+    display: flex;
+    align-items: baseline;
+    gap: 3mm;
+    margin-bottom: 3.5mm;
+    padding-bottom: 1.5mm;
+    border-bottom: 1px solid var(--ink);
+  }
+  .section-head .roman {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    font-weight: 320;
+    font-size: 12pt;
+    color: var(--gold);
+    flex-shrink: 0;
+    line-height: 1;
+    min-width: 8mm;
+  }
+  .section-head h2 {
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-weight: 520;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    color: var(--ink);
+    flex: 1;
+    line-height: 1.25;
+  }
+  .section-head h2 em {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-variation-settings: normal;
+    text-transform: none;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--rust);
+    font-size: 12pt;
+  }
+  .section-head .dot {
+    width: 4px; height: 4px;
+    background: var(--gold);
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .body p {
+    margin-bottom: 2.8mm;
+    font-size: 9.5pt;
+    line-height: 1.62;
+    color: var(--ink);
+  }
+  .body p:last-child { margin-bottom: 0; }
+  .body strong {
+    font-weight: 550;
+    color: var(--ink);
+    background: linear-gradient(transparent 62%, rgba(201,169,97,0.32) 62%);
+    padding: 0 0.04em;
+  }
+  .body em { font-style: italic; color: var(--rust); }
+
+  /* Grapply role block */
+  .role-lines {
+    border-left: 2px solid var(--gold);
+    padding: 2mm 0 2mm 4mm;
+    margin: 3mm 0;
+  }
+  .role-lines .row { margin-bottom: 1.8mm; font-size: 9.5pt; line-height: 1.55; }
+  .role-lines .row:last-child { margin-bottom: 0; }
+  .role-lines dt {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6.8pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--rust);
+    display: inline;
+    margin-right: 1.5mm;
+    font-weight: 550;
+  }
+  .role-lines dd { display: inline; color: var(--ink); }
+  .role-lines em { color: var(--rust); font-style: italic; }
+
+  /* Awards */
+  .awards { margin-top: 2mm; }
+  .award {
+    display: grid;
+    grid-template-columns: 11mm 1fr;
+    gap: 3mm;
+    padding: 2.8mm 0;
+    border-bottom: 1px dashed var(--ink-hair);
+  }
+  .award:last-child { border-bottom: none; padding-bottom: 0; }
+  .award:first-child { padding-top: 0; }
+  .award-num {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    font-weight: 300;
+    font-size: 13pt;
+    color: var(--gold);
+    line-height: 1.05;
+  }
+  .award-num::before {
+    content: "";
+    display: inline-block;
+    width: 3px; height: 3px;
+    border-radius: 50%;
+    background: var(--gold);
+    vertical-align: middle;
+    margin-right: 1.5mm;
+    margin-bottom: 1.5mm;
+  }
+  .award-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 440;
+    font-size: 12pt;
+    line-height: 1.2;
+    letter-spacing: -0.018em;
+    color: var(--ink);
+  }
+  .award-title .cn {
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    color: var(--rust);
+    font-weight: 320;
+    font-size: 0.78em;
+    margin-left: 0.3em;
+  }
+  .award-desc {
+    margin-top: 1.2mm;
+    font-size: 9pt;
+    line-height: 1.58;
+    color: var(--ink-2);
+  }
+  .award-desc strong {
+    color: var(--ink); font-weight: 550;
+    background: linear-gradient(transparent 62%, rgba(201,169,97,0.32) 62%);
+    padding: 0 0.04em;
+  }
+
+  /* AI Stack */
+  .stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5mm;
+    margin-bottom: 2.5mm;
+  }
+  .tool {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 420;
+    font-size: 9.5pt;
+    padding: 0.9mm 2.5mm;
+    border: 0.75px solid var(--ink);
+    color: var(--ink);
+    background: transparent;
+    letter-spacing: -0.005em;
+    line-height: 1.25;
+    transition: all 0.2s ease;
+  }
+  .tool:hover { background: var(--ink); color: var(--paper); }
+  .tool em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    color: var(--rust);
+  }
+  .tool.primary {
+    background: var(--ink);
+    color: var(--paper);
+    border-color: var(--ink);
+  }
+  .tool.primary em { color: var(--gold-bright); }
+  .stack-note {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 9.5pt;
+    color: var(--ink-2);
+    margin-top: 2.5mm;
+    line-height: 1.4;
+  }
+
+  /* Projects */
+  .projects { counter-reset: proj; margin-top: 1mm; }
+  .project {
+    display: grid;
+    grid-template-columns: 9mm 1fr;
+    gap: 2.5mm;
+    padding: 2.6mm 0;
+    border-bottom: 1px dashed var(--ink-hair);
+  }
+  .project:last-child { border-bottom: none; padding-bottom: 0; }
+  .project:first-child { padding-top: 1mm; }
+  .project-num {
+    counter-increment: proj;
+    font-family: 'Fraunces', serif;
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    font-weight: 320;
+    font-size: 12pt;
+    color: var(--gold);
+    line-height: 1.25;
+  }
+  .project-num::before { content: counter(proj, decimal-leading-zero); }
+
+  /* Appendix works list — year labels, tighter rhythm */
+  .appendix-works .project { padding: 1.6mm 0; }
+  .appendix-works .project-num::before { content: none; }
+  .appendix-works .project-num {
+    font-size: 9.5pt;
+    font-style: normal;
+    font-variation-settings: "opsz" 144, "SOFT" 30, "WONK" 0;
+    font-weight: 440;
+    letter-spacing: 0.02em;
+    color: var(--gold-deep);
+  }
+  .appendix-works .project { grid-template-columns: 12mm 1fr; }
+
+  /* English appendix runs longer — tighten rhythm so it fits 297mm */
+  #lang-en .appendix-works .project { padding: 0.95mm 0; }
+  #lang-en .appendix-works .project-title { font-size: 10pt; line-height: 1.22; }
+  #lang-en .appendix-works .project-desc { font-size: 8.4pt; line-height: 1.35; }
+  #lang-en .appendix-works .project-num { font-size: 9pt; }
+
+  /* Featured video — facade pattern, screen only */
+  .project-video {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 112mm;
+    aspect-ratio: 16 / 9;
+    margin: 2.5mm 0 1.2mm;
+    border: 0.3mm solid var(--gold);
+    outline: 0.2mm solid var(--paper);
+    outline-offset: -0.7mm;
+    box-shadow:
+      0 0.4mm 0.8mm rgba(0,0,0,0.12),
+      0 1.2mm 3.5mm rgba(0,0,0,0.22),
+      inset 0 0 0 0.1mm rgba(0,0,0,0.3);
+    cursor: pointer;
+    overflow: hidden;
+    background: #0b0a08;
+    text-decoration: none;
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+                box-shadow 0.35s ease;
+  }
+  .project-video:hover {
+    transform: translateY(-0.3mm);
+    box-shadow:
+      0 0.4mm 0.8mm rgba(0,0,0,0.14),
+      0 2.2mm 6mm rgba(0,0,0,0.28),
+      inset 0 0 0 0.1mm rgba(0,0,0,0.3);
+  }
+  .project-video img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.9) contrast(1.04) brightness(0.96);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+                filter 0.4s ease;
+  }
+  .project-video:hover img {
+    transform: scale(1.035);
+    filter: saturate(1) contrast(1.06) brightness(1);
+  }
+  .project-video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+  }
+  .project-video::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center,
+      rgba(0,0,0,0) 35%,
+      rgba(0,0,0,0.45) 100%);
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+  .project-video::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 13mm;
+    height: 13mm;
+    border-radius: 50%;
+    background: rgba(250, 246, 236, 0.94);
+    box-shadow: 0 0.6mm 2mm rgba(0,0,0,0.35);
+    pointer-events: none;
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .project-video:hover::after {
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+  .project-video .play-glyph {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(calc(-50% + 0.4mm), -50%);
+    width: 0;
+    height: 0;
+    border-top: 2.3mm solid transparent;
+    border-bottom: 2.3mm solid transparent;
+    border-left: 3.8mm solid var(--gold-deep);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .project-video .video-label {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2.5mm 3mm 1.6mm;
+    background: linear-gradient(to top,
+      rgba(0,0,0,0.85) 0%,
+      rgba(0,0,0,0.4) 70%,
+      rgba(0,0,0,0) 100%);
+    color: #faf6ec;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 40, "WONK" 0;
+    font-weight: 460;
+    font-size: 8.4pt;
+    letter-spacing: 0.01em;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .project-video .video-label em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 80, "WONK" 1;
+    color: #efdda8;
+    font-weight: 420;
+    margin-right: 0.3em;
+  }
+  .project-video.playing::before,
+  .project-video.playing::after,
+  .project-video.playing .play-glyph,
+  .project-video.playing .video-label { display: none; }
+
+  @media print {
+    .project-video { display: none !important; }
+  }
+
+  /* Featured photo — editorial still with caption, screen only */
+  .project-photo {
+    display: block;
+    width: 100%;
+    max-width: 112mm;
+    margin: 2.8mm 0 1.5mm;
+    text-decoration: none;
+    color: inherit;
+  }
+  .project-photo figure {
+    margin: 0;
+    padding: 0;
+  }
+  .project-photo .photo-frame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 600 / 332;
+    border: 0.3mm solid var(--gold);
+    outline: 0.2mm solid var(--paper);
+    outline-offset: -0.7mm;
+    box-shadow:
+      0 0.4mm 0.8mm rgba(0,0,0,0.12),
+      0 1.2mm 3.5mm rgba(0,0,0,0.22),
+      inset 0 0 0 0.1mm rgba(0,0,0,0.3);
+    overflow: hidden;
+    background: #0b0a08;
+    transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1),
+                box-shadow 0.35s ease;
+  }
+  .project-photo:hover .photo-frame {
+    transform: translateY(-0.3mm);
+    box-shadow:
+      0 0.4mm 0.8mm rgba(0,0,0,0.14),
+      0 2.2mm 6mm rgba(0,0,0,0.28),
+      inset 0 0 0 0.1mm rgba(0,0,0,0.3);
+  }
+  .project-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.95) contrast(1.02);
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1),
+                filter 0.4s ease;
+  }
+  .project-photo:hover img {
+    transform: scale(1.035);
+    filter: saturate(1.02) contrast(1.04);
+  }
+  .project-photo figcaption {
+    margin-top: 1.5mm;
+    padding: 0 0.3mm;
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 12, "SOFT" 50, "WONK" 0;
+    font-weight: 380;
+    font-style: italic;
+    font-size: 8.2pt;
+    line-height: 1.4;
+    color: var(--ink-soft);
+    letter-spacing: 0.003em;
+  }
+  .project-photo figcaption .source {
+    display: inline-block;
+    margin-left: 0.4em;
+    font-family: 'Fraunces', serif;
+    font-style: normal;
+    font-variation-settings: "opsz" 10, "SOFT" 20, "WONK" 0;
+    font-weight: 480;
+    font-size: 7.4pt;
+    color: var(--gold-deep);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    border-bottom: 0.15mm solid transparent;
+    padding-bottom: 0.2mm;
+    transition: border-color 0.25s ease, color 0.25s ease;
+  }
+  .project-photo:hover figcaption .source {
+    border-bottom-color: var(--gold);
+    color: var(--gold);
+  }
+
+  @media print {
+    .project-photo { display: none !important; }
+  }
+  .project-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 460;
+    font-size: 10.5pt;
+    color: var(--ink);
+    letter-spacing: -0.006em;
+    line-height: 1.25;
+  }
+  .project-desc {
+    font-size: 9pt;
+    line-height: 1.58;
+    color: var(--ink-2);
+    margin-top: 0.6mm;
+  }
+  .project-desc strong {
+    color: var(--ink); font-weight: 550;
+    background: linear-gradient(transparent 62%, rgba(201,169,97,0.3) 62%);
+    padding: 0 0.04em;
+  }
+  .project-desc em { font-style: italic; color: var(--rust); }
+
+  /* Semester arc */
+  .arc {
+    margin-top: 4mm;
+    padding: 3.5mm 4.5mm;
+    background: var(--paper-2);
+    border-left: 2px solid var(--rust);
+    font-size: 9pt;
+    line-height: 1.62;
+    color: var(--ink);
+    position: relative;
+  }
+  .arc::before {
+    content: "";
+    position: absolute;
+    top: 0; left: -2px;
+    width: 2px; height: 6mm;
+    background: var(--gold);
+  }
+  .arc strong {
+    font-weight: 560;
+    background: linear-gradient(transparent 62%, rgba(201,169,97,0.36) 62%);
+    padding: 0 0.04em;
+  }
+  .arc em { font-style: italic; color: var(--rust); }
+  .arc .arrow {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    color: var(--gold);
+    padding: 0 0.15em;
+  }
+
+  .conviction {
+    margin-top: 4mm;
+    font-size: 9.5pt;
+    line-height: 1.62;
+    color: var(--ink);
+  }
+  .conviction strong {
+    font-weight: 550;
+    background: linear-gradient(transparent 62%, rgba(201,169,97,0.32) 62%);
+    padding: 0 0.04em;
+  }
+  .conviction em { font-style: italic; color: var(--rust); }
+
+  /* Teaching experience */
+  .job {
+    display: grid;
+    grid-template-columns: 26mm 1fr;
+    gap: 4mm;
+    padding: 3mm 0;
+    border-bottom: 1px dashed var(--ink-hair);
+  }
+  .job:last-child { border-bottom: none; padding-bottom: 0; }
+  .job:first-child { padding-top: 1mm; }
+  .job-years {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 400;
+    font-size: 12.5pt;
+    color: var(--gold);
+    line-height: 1.1;
+    letter-spacing: -0.012em;
+  }
+  .job-years em {
+    font-style: italic;
+    font-variation-settings: "opsz" 144, "SOFT" 100, "WONK" 1;
+    font-weight: 320;
+  }
+  .job-title {
+    font-family: 'Fraunces', serif;
+    font-variation-settings: "opsz" 144, "SOFT" 30;
+    font-weight: 460;
+    font-size: 11.5pt;
+    color: var(--ink);
+    letter-spacing: -0.012em;
+    line-height: 1.25;
+  }
+  .job-org {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 10.5pt;
+    color: var(--rust);
+    display: block;
+    margin: 0.5mm 0 1.2mm;
+  }
+  .job-desc {
+    font-size: 9pt;
+    line-height: 1.58;
+    color: var(--ink-2);
+  }
+
+  /* Facts */
+  .facts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4mm 6mm;
+    margin-top: 1mm;
+  }
+  .fact {
+    font-size: 9pt;
+    line-height: 1.58;
+    color: var(--ink-2);
+  }
+  .fact .lbl {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 6.8pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--rust);
+    margin-bottom: 1.2mm;
+    display: flex;
+    align-items: center;
+    gap: 1.5mm;
+    font-weight: 540;
+  }
+  .fact .lbl::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--ink-hair);
+  }
+  .fact strong { color: var(--ink); font-weight: 550; }
+  .fact em { font-style: italic; color: var(--rust); }
+  .fact.full { grid-column: span 2; }
+
+  /* Closing */
+  .closing {
+    margin-top: 1mm;
+    padding: 5mm 6mm;
+    background: var(--paper-2);
+    position: relative;
+    border: 1px solid var(--ink-hair);
+  }
+  .closing::before {
+    content: "";
+    position: absolute;
+    top: -1px; left: 5mm;
+    width: 18mm; height: 2px;
+    background: var(--gold);
+  }
+  .closing p {
+    font-size: 9.8pt;
+    line-height: 1.65;
+    color: var(--ink);
+    margin-bottom: 2.5mm;
+  }
+  .closing p:last-of-type { margin-bottom: 0; }
+  .closing strong {
+    font-weight: 560;
+    color: var(--ink);
+    background: linear-gradient(transparent 62%, rgba(201,169,97,0.38) 62%);
+    padding: 0 0.04em;
+  }
+  .closing em { font-style: italic; color: var(--rust); }
+  .closing .avail {
+    font-family: 'Instrument Serif', serif;
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--rust);
+    display: block;
+    margin-top: 3.5mm;
+    padding-top: 2.5mm;
+    border-top: 1px dashed var(--ink-hair);
+  }
+
+  /* Print */
+  @page { size: A4; margin: 0; }
+  @media print {
+    html, body { background: white !important; padding: 0 !important; }
+    .lang-group { display: block !important; }
+    .lang-switch-inline {
+      background: var(--paper-2) !important;
+      box-shadow: none !important;
+    }
+    .page {
+      box-shadow: none !important;
+      margin: 0 !important;
+      page-break-after: always;
+      break-after: page;
+    }
+    .lang-group:last-child .page:last-of-type {
+      page-break-after: auto;
+      break-after: auto;
+    }
+    * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  }
+
+  /* Responsive */
+  @media (max-width: 820px) {
+    body { padding: 1rem 0.5rem; }
+    .lang-switch-inline { top: 4mm; left: 5mm; }
+    .page {
+      width: 100%;
+      min-height: auto;
+      padding: 8mm 6mm 14mm;
+    }
+    .name { font-size: 32pt; }
+    .resume-header { grid-template-columns: 1fr; }
+    .photo-frame { width: 30mm; margin-top: 3mm; }
+    .facts { grid-template-columns: 1fr; }
+    .fact.full { grid-column: auto; }
+    .job { grid-template-columns: 1fr; gap: 1mm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════  THAI VERSION  ═══════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<div class="lang-group" id="lang-th">
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 01</div>
+  <nav class="lang-switch-inline" aria-label="Language switcher">
+    <a class="lang-btn current" href="#lang-th" data-lang="th">ไทย</a>
+    <a class="lang-btn" href="#lang-en" data-lang="en">EN</a>
+    <a class="lang-btn" href="#lang-zh" data-lang="zh">Chinese</a>
+  </nav>
+
+  <header class="resume-header">
+    <div class="header-text">
+      <div class="header-label">Curriculum Vitæ · ประวัติส่วนตัว</div>
+      <h1 class="name">KuanHsiang Liu <span class="paren">(Kent)</span></h1>
+      <p class="tagline">ผู้ก่อตั้งสตาร์ทอัพ AI <span class="sep">·</span> ศิลปินรางวัลระดับชาติ <span class="sep">·</span> ครูสองภาษา</p>
+      <div class="contact">
+        <span>ระยอง, ประเทศไทย</span>
+        <span class="sep">✦</span>
+        <span><strong><a href="mailto:kentliuai08@gmail.com">kentliuai08@gmail.com</a></strong></span>
+        <span class="sep">✦</span>
+        <span>สมัครตำแหน่ง: ครูคอมพิวเตอร์ (โค้ดดิ้งและหุ่นยนต์) — โรงเรียนมงฟอร์ตวิทยาลัย แผนกประถม, พฤษภาคม 2026</span>
+      </div>
+    </div>
+    <figure class="photo-frame">
+      <img src="509313071_10233500397284836_262950069320019830_n.jpg" alt="KuanHsiang Liu (Kent)">
+    </figure>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">I.</span>
+      <h2>ประวัติโดยย่อ</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        ผมเป็นครูที่ทำงานข้ามสาขา ผสมผสาน<strong>การเป็นผู้ประกอบการด้าน AI ผลงานสร้างสรรค์ระดับรางวัลแห่งชาติ และการสอนแบบสองภาษา</strong>
+        ปัจจุบันเป็นผู้ก่อตั้งแพลตฟอร์ม <strong>Grapply AI</strong> ผู้ได้รับ
+        <strong>รางวัลใหญ่สาขาศิลปะการแสดง จากงาน Taishin Arts Award ครั้งที่ 15</strong>
+        (เกียรติสูงสุดด้านศิลปะของไต้หวัน) และเคยเป็น<strong>ครูภาษาอังกฤษและภาษาจีนเต็มเวลา</strong>
+        ที่โรงเรียน Trakan Phuet Phon จังหวัดอุบลราชธานี (2024–2025)
+      </p>
+      <p>
+        คุณค่าที่ไม่เหมือนใครของผมอยู่ตรงจุดตัดของสามตัวตน:
+        <strong>ผู้ก่อตั้งสตาร์ทอัพ AI ที่สร้างผลิตภัณฑ์จริง ศิลปินรางวัลแห่งชาติที่ใช้ AI ในงานเวทีมืออาชีพ และครูสองภาษาที่มีประสบการณ์ในห้องเรียนไทย</strong>
+        สิ่งที่ผมนำมาให้นักเรียน Montfort ไม่ใช่แค่วิธีใช้เครื่องมือเขียนโค้ด — แต่คือ
+        <strong>วิธีใช้ AI และเครื่องมือดิจิทัลเพื่อเล่าเรื่องของตัวเองและสร้างแอปเล็ก ๆ ของตัวเอง</strong>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">II.</span>
+      <h2>เกี่ยวกับ Grapply — <em>แพลตฟอร์ม AI ที่ผมก่อตั้ง</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Grapply</strong> เป็นแพลตฟอร์ม AI SaaS ที่ผมสร้างและดำเนินการด้วยตัวเอง ช่วย SME เขียนเอกสารขอทุนสนับสนุนจากรัฐบาลด้วย AI
+        ในไต้หวัน เอกสารขอทุน 40–50 หน้าตามปกติต้องใช้เวลา <strong>หลายสัปดาห์ถึงหลายเดือน</strong>
+        และมีค่าที่ปรึกษา <strong>50,000–150,000+ ดอลลาร์ไต้หวันใหม่</strong>
+        Grapply ย่อขั้นตอนทั้งหมดนี้เหลือ <strong>ไม่ถึงสองชั่วโมง</strong>
+        ด้วยการแนะนำแบบสนทนา การค้นหาความรู้ RAG และการสร้างเอกสารอัตโนมัติ
+      </p>
+      <dl class="role-lines">
+        <div class="row"><dt>บทบาทของผม</dt><dd>ผู้ก่อตั้งคนเดียว — ออกแบบผลิตภัณฑ์ workflow AI พัฒนา full-stack และการตลาด</dd></div>
+        <div class="row"><dt>วิธีการของผม</dt><dd>workflow <em>"Vibe Coding"</em> ที่ใช้ AI ช่วย ขับเคลื่อนด้วย Claude Code, Claude, Cursor, ChatGPT และ Gemini — ผมนำทางเรื่องตรรกะผลิตภัณฑ์และการตัดสินใจออกแบบ AI จัดการรายละเอียดการพัฒนา</dd></div>
+      </dl>
+      <p>
+        ประสบการณ์นี้ทำให้ผมเข้าใจอย่างลึกซึ้งว่าเด็ก ๆ ต้องการอะไรจริง ๆ ในยุค AI: ไม่ใช่การท่องจำไวยากรณ์ แต่เป็น
+        <strong>การเรียนรู้ว่าจะเปลี่ยนความคิดของพวกเขาให้กลายเป็นผลงานจริงที่ใช้ได้ด้วยความช่วยเหลือของ AI ได้อย่างไร</strong>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">III.</span>
+      <h2>ผลงานสร้างสรรค์ — <em>รางวัลระดับชาติและ AI ในศิลปะมืออาชีพ</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 3mm;">
+        ผมเป็นหนึ่งในไม่กี่คนในไต้หวันที่มีทั้ง <strong>เกียรติศิลปะระดับชาติ</strong>
+        และได้นำ <strong>AI เชิงสร้างสรรค์มาประยุกต์ใช้ในงานเวทีระดับมืออาชีพ</strong>:
+      </p>
+    </div>
+    <div class="awards">
+      <article class="award">
+        <div class="award-num">01</div>
+        <div>
+          <h3 class="award-title">"KIDS" <span class="cn">(我知道的太多了)</span></h3>
+          <p class="award-desc">
+            ผู้ชนะ <strong>รางวัลใหญ่สาขาศิลปะการแสดง Taishin Arts Award ครั้งที่ 15</strong>
+            (เกียรติสูงสุดด้านศิลปะของไต้หวัน) ได้รับเชิญแสดงในเทศกาลนานาชาติที่เดนมาร์ก แคนาดา (PuSh Festival)
+            เยอรมนี (Tanzmesse NRW) ปักกิ่ง ฮ่องกง และสิงคโปร์
+          </p>
+          <a class="project-video" href="https://www.youtube.com/watch?v=wlE_-LyYHtQ" target="_blank" rel="noopener" aria-label="ชมคลิปการแสดง KIDS บน YouTube">
+            <img src="https://img.youtube.com/vi/wlE_-LyYHtQ/hqdefault.jpg" alt="KIDS — คลิปการแสดง">
+            <span class="play-glyph"></span>
+            <span class="video-label"><em>ชมบน YouTube</em> · KIDS</span>
+          </a>
+        </div>
+      </article>
+      <article class="award">
+        <div class="award-num">02</div>
+        <div>
+          <h3 class="award-title">"The Metamorphosis" <span class="cn">(變形記)</span></h3>
+          <p class="award-desc">
+            ภาพยนตร์ออนไลน์ที่ผมเขียนบทและกำกับเอง <strong>ได้รับการเสนอชื่อเข้าชิงรางวัล Taiwan Award ในเทศกาลภาพยนตร์เถาหยวน</strong>
+          </p>
+          <a class="project-photo" href="https://star.ettoday.net/news/2294946" target="_blank" rel="noopener" aria-label="อ่านข่าว The Metamorphosis บน ETtoday">
+            <figure>
+              <div class="photo-frame">
+                <img src="metamorphose_taoyuan.jpg" alt="《變形記》ภาพนิ่งจากเทศกาลภาพยนตร์เถาหยวน">
+              </div>
+              <figcaption>
+                ▲《The Metamorphosis》ผสมผสานภาพยนตร์การเต้นรำกับสไตล์แฟนตาซี (ภาพ/เทศกาลภาพยนตร์เถาหยวน)
+                <span class="source">ETtoday ↗</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+      <article class="award">
+        <div class="award-num">03</div>
+        <div>
+          <h3 class="award-title">"SH0VA" <span class="cn">(濕婆神)</span></h3>
+          <p class="award-desc">
+            ได้รับเชิญโดย <strong>ธนาคาร Taishin</strong> ให้แสดงในงานย้อนรอย Taishin Arts Award
+            ผลงานนี้ใช้ <strong>ภาพที่สร้างโดย AI จำนวนมาก</strong> เป็นภาพแกนหลักของเวที —
+            เป็นผลงานเรือธงของผมที่ผสาน AI เชิงสร้างสรรค์เข้ากับโรงละครมืออาชีพ
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— มีต่อ —</em>
+    <span>Folio 01 / 03</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 02</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IV.</span>
+      <h2>เครื่องมือ AI ที่ผมใช้ <em>ทุกวัน</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="stack-list">
+      <span class="tool">Midjourney</span>
+      <span class="tool">ChatGPT <em>(DALL·E)</em></span>
+      <span class="tool">Gemini</span>
+      <span class="tool">Leonardo</span>
+      <span class="tool">Runway</span>
+      <span class="tool">Kling</span>
+      <span class="tool">Sora</span>
+      <span class="tool">Veo</span>
+      <span class="tool">Suno</span>
+      <span class="tool">Udio</span>
+      <span class="tool">ElevenLabs</span>
+      <span class="tool primary">Claude</span>
+      <span class="tool primary">Claude Code</span>
+      <span class="tool primary">Claude Cowork</span>
+      <span class="tool">Cursor</span>
+      <span class="tool">OpenAI Codex</span>
+    </div>
+    <p class="stack-note">
+      ทั้งหมดเป็นแพลตฟอร์มบนเบราว์เซอร์ — ไม่ต้องใช้ซอฟต์แวร์ตัดต่อที่ซับซ้อน เหมาะสำหรับห้องเรียนคอมพิวเตอร์ระดับประถม
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">V.</span>
+      <h2>สิ่งที่ผมสามารถนำมามอบให้ <em>นักเรียน Montfort</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 2.5mm;">
+        ผมแปล workflow การสร้างสรรค์ด้วย AI ระดับมืออาชีพ ให้กลายเป็น
+        <strong>โปรเจกต์เล็ก ๆ ที่นักเรียนประถมสามารถทำได้จนเสร็จด้วยเครื่องมือออนไลน์ฟรี</strong>:
+      </p>
+    </div>
+    <div class="projects">
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"หนังสือนิทานมีชีวิต" (Living Storybook)</h3>
+          <p class="project-desc">
+            เด็ก ๆ เขียนเรื่องราว → สร้างตัวละครด้วย <strong>Midjourney/Gemini</strong>
+            → ประกอบเป็นนิทานอินเทอร์แอกทีฟใน <strong>Scratch</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"ภาพยนตร์ AI 30 วินาที" (30-Second AI Movie)</h3>
+          <p class="project-desc">
+            เด็ก ๆ จินตนาการเรื่องราว → เปลี่ยนข้อความเป็นวิดีโอด้วย <strong>Runway/Kling</strong>
+            → ไม่ต้องใช้ซอฟต์แวร์ตัดต่อเลย
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"เพลงแรกของฉัน" (My First Song)</h3>
+          <p class="project-desc">
+            เด็ก ๆ อธิบายความรู้สึกหรือเรื่องราว → <strong>Suno</strong>
+            สร้างเพลงเต็มรูปแบบ (เสียงร้อง เครื่องดนตรี การเรียบเรียง) —
+            เพลงประจำชั้น เพลงวันเกิด หรือเพลงประกอบแอนิเมชันของตัวเอง
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"เวทมนตร์แห่งเสียง" (Voice Magic)</h3>
+          <p class="project-desc">
+            ใช้ <strong>ElevenLabs</strong> ให้เสียงกับตัวละครที่เด็ก ๆ สร้างขึ้น เพื่อได้ยินเรื่องราวของตัวเองมีชีวิตขึ้นมา
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"วาดภาพด้วยโค้ด" (Drawing with Code)</h3>
+          <p class="project-desc">
+            ผ่าน <strong>Scratch pen blocks</strong> เด็ก ๆ ได้ค้นพบว่า "ชุดคำสั่งก็สามารถกลายเป็นภาพได้"
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"เว็บเพจ / มินิแอปแรกของฉัน" (My First Webpage / Mini-App)</h3>
+          <p class="project-desc">
+            นี่คือสิ่งที่ผมตื่นเต้นที่สุดที่จะสอน: <strong>ใช้ AI เป็นผู้ช่วยสร้าง เพื่อสร้างสิ่งที่ใช้งานได้จริง</strong>
+            เว็บเพจแนะนำตัว มินิ chatbot ที่คุยด้วยได้ เกมเล็ก ๆ (ทายตัวเลข ตอบคำถาม สุ่มรางวัล)
+            เครื่องมือจดบันทึกส่วนตัวเล็ก ๆ เด็ก ๆ ไม่ต้องรู้ภาษาโปรแกรมใด ๆ — พวกเขาแค่ต้อง
+            <strong>บอกว่าอยากได้อะไร</strong> และ AI จะช่วยสร้างให้
+            นี่คือสิ่งที่ผมทำทุกวันที่ Grapply และผมสามารถสอนวิธีการนี้ให้เด็ก ๆ ได้
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"ผู้ใช้ AI ตัวน้อย" (Little AI Users)</h3>
+          <p class="project-desc">
+            วิธีคุยกับ AI วิธีตัดสินว่าคำตอบของ AI ถูกต้องหรือไม่ และ
+            <strong>เมื่อไหร่ที่ไม่ควรให้ AI ช่วย</strong>
+            — ทักษะ AI ที่จำเป็นสำหรับนักเรียนประถมทุกคนในปี 2026
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arc">
+      <strong>ภายในหนึ่งภาคเรียน นักเรียนสามารถสร้างโปรเจกต์ที่สมบูรณ์หนึ่งชิ้น:</strong>
+      เขียนเรื่องของตัวเอง <span class="arrow">→</span> วาดภาพประกอบด้วย AI
+      <span class="arrow">→</span> แต่งเพลงประกอบด้วย Suno
+      <span class="arrow">→</span> ทำแอนิเมชันด้วย Runway
+      <span class="arrow">→</span> ประกอบเป็นเว็บเพจอินเทอร์แอกทีฟโดยมี AI ช่วย
+      <span class="arrow">→</span> <em>นำเสนอต่อผู้ปกครองในงานแสดงปลายภาค</em>
+    </div>
+
+    <p class="conviction">
+      ผมไม่ใช่แค่ "ครูที่ใช้ AI" ผมเป็น
+      <strong>ศิลปินที่เคยใช้ AI บนเวทีระดับชาติ และเป็นผู้ก่อตั้งที่กำลังสร้างผลิตภัณฑ์ SaaS จริงด้วย AI อย่างแข็งขัน</strong>
+      ประสบการณ์จริงนี้ทำให้ผมสามารถแสดงให้เด็ก ๆ เห็นว่า
+      <strong>เทคโนโลยีไม่ใช่เครื่องมือที่เย็นชา — มันคือพาร์ตเนอร์ในการสร้างสรรค์ที่ช่วยให้พวกเขาสร้างสิ่งที่พวกเขาภูมิใจ</strong>
+    </p>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— มีต่อ —</em>
+    <span>Folio 02 / 03</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 03</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VI.</span>
+      <h2>ประสบการณ์การสอน</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2024</em> — 2025</div>
+      <div>
+        <h3 class="job-title">ครูภาษาอังกฤษและภาษาจีน (จีนกลาง)</h3>
+        <span class="job-org">โรงเรียน Trakan Phuet Phon, อุบลราชธานี, ประเทศไทย</span>
+        <p class="job-desc">
+          ครูสองภาษาเต็มเวลา สอนภาษาอังกฤษและจีนกลางแบบ immersive
+          ผสมผสานการเคลื่อนไหว ดนตรี และการเล่าเรื่อง ทำงานใกล้ชิดกับครูไทยร่วมทีม;
+          เข้าใจจังหวะห้องเรียนไทยและวัฒนธรรมการสื่อสารระหว่างบ้านกับโรงเรียนเป็นอย่างดี
+        </p>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2011</em> — 2020</div>
+      <div>
+        <h3 class="job-title">นักออกแบบท่าเต้นและนักการศึกษา</h3>
+        <span class="job-org">Cloud Gate Foundation / HORSE Dance Theater, ไทเป</span>
+        <p class="job-desc">
+          มากกว่าหนึ่งทศวรรษของประสบการณ์ออกแบบท่าเต้นและสอนในสถาบันศิลปะการแสดงชั้นนำของไต้หวัน
+          มีประสบการณ์มากมายในการนำเด็กและเยาวชนสู่การแสดงออกเชิงสร้างสรรค์
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VII.</span>
+      <h2>เครื่องมือและหัวข้อที่สอนได้</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="facts">
+      <div class="fact full">
+        <div class="lbl">หัวข้อที่สอนได้</div>
+        Scratch · การคิดเชิงคำนวณ · ทักษะ AI · การสร้างภาพและเพลงด้วย AI · การเล่าเรื่องดิจิทัล ·
+        <strong>การพัฒนาเว็บเพจและมินิแอปโดยใช้ AI ช่วย</strong> · การสร้าง Chatbot
+      </div>
+      <div class="fact">
+        <div class="lbl">ซอฟต์แวร์สำนักงาน</div>
+        Word, PowerPoint, Excel, Google Workspace — <em>ใช้งานคล่องและนำมาบูรณาการในการสอนได้</em>
+      </div>
+      <div class="fact">
+        <div class="lbl">ประสบการณ์ผู้ประกอบการ</div>
+        <strong>ผู้ก่อตั้งแพลตฟอร์ม Grapply AI</strong> — พัฒนาผลิตภัณฑ์ AI ด้วยตัวเองทุกวัน
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VIII.</span>
+      <h2>การศึกษาและภาษา</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="facts">
+      <div class="fact">
+        <div class="lbl">การศึกษา</div>
+        <strong>ปริญญาตรีสาขาศิลปศาสตร์</strong> — มหาวิทยาลัยศิลปะแห่งชาติไต้หวัน, ไทเป, ไต้หวัน
+      </div>
+      <div class="fact">
+        <div class="lbl">ภาษา</div>
+        <strong>จีน (จีนกลาง):</strong> ภาษาแม่ &nbsp;•&nbsp;
+        <strong>อังกฤษ:</strong> ระดับสูง (C1) — <em>สามารถสอนเป็นภาษาอังกฤษล้วน</em> &nbsp;•&nbsp;
+        <strong>ไทย:</strong> พื้นฐาน (กำลังเรียน)
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IX.</span>
+      <h2>ทำไมต้อง Montfort?</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="closing">
+      <p>
+        ปัจจุบันผมอาศัยอยู่ที่ระยอง ประเทศไทย และกำลังมองหาโอกาสการสอนระยะยาวที่ผมสามารถ
+        <strong>ทุ่มเทตัวเองได้อย่างเต็มที่</strong>
+        โปรแกรมสองภาษาและวิทยาเขตริมแม่น้ำอันงดงามของ Montfort College Primary คือสภาพแวดล้อมที่ผมกำลังมองหา
+      </p>
+      <p>
+        สิ่งที่ผมนำมาให้นักเรียนของท่านไม่ใช่แค่คาบเรียนคอมพิวเตอร์หนึ่งคาบ — แต่คือ
+        <strong>มุมมองเชิงปฏิบัติของผู้ก่อตั้ง AI สายตาสร้างสรรค์ของศิลปินรางวัลระดับชาติ และความอบอุ่นในห้องเรียนของครูสองภาษา</strong>
+        ผมอยากให้เด็ก ๆ เติบโตขึ้นมาด้วยความเชื่อว่า
+        <strong>AI, โค้ด และศิลปะ ล้วนเป็นภาษาของการสร้างสรรค์</strong>
+      </p>
+      <span class="avail">พร้อมเดินทางไปเชียงใหม่เพื่อสัมภาษณ์และสาธิตการสอนตามความสะดวกของท่าน</span>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— จบประวัติหลัก —</em>
+    <span>Folio 03 / 03</span>
+  </div>
+</article>
+
+<!-- ══════════════════════ APPENDIX · TH ══════════════════════ -->
+<article class="page">
+  <div class="page-corner">Vol. II · ภาคผนวก 01 · Appendix</div>
+
+  <header class="resume-header">
+    <div class="header-text">
+      <div class="header-label">ภาคผนวก · Appendix · แฟ้มอาชีพศิลปะ</div>
+      <h1 class="name">แฟ้มอาชีพศิลปะ</h1>
+      <p class="tagline">Kent Liu — <em>บันทึกอาชีพฉบับสมบูรณ์</em> <span class="sep">·</span> 2011 — 2023</p>
+      <div class="contact">
+        <span>ออกแบบท่าเต้น <span class="sep">·</span> กำกับ <span class="sep">·</span> ภาพยนตร์ <span class="sep">·</span> งานสร้างสรรค์มัลติมีเดีย</span>
+        <span class="sep">✦</span>
+        <span><em>รากของการสร้างสรรค์เหล่านี้ คือเหตุผลที่ผมกล้าสอนเด็กใช้ AI โค้ด และเครื่องมือดิจิทัลเป็นภาษาของการแสดงออก</em></span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">I.</span>
+      <h2>ประวัติอาชีพ</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 3mm;">
+        เกิดที่หมู่บ้านจูเฟิง ตำบลลู่กู่ จังหวัดหนานโถว ไต้หวัน
+        ก่อนสำเร็จการศึกษาจากคณะนาฏศิลป์ มหาวิทยาลัยศิลปะแห่งชาติไต้หวัน ผมได้เข้าร่วม
+        <strong>HORSE Dance Theatre</strong> และเริ่มต้นเส้นทางการสร้างสรรค์จากที่นั่น
+        ปี 2014 ผมเปิดตัวผลงานเดี่ยวเต็มรูปแบบชิ้นแรก
+        《<strong>Hero วีรบุรุษ</strong>》อุทิศแด่คุณพ่อผู้ล่วงลับ ปี 2015 《Two Duet》ได้รับเชิญเข้าร่วมเทศกาลศิลปะนานาชาติเม็กซิโกครั้งแรก
+        และในปีเดียวกัน《<strong>KIDS — สิ่งที่ผมรู้มากเกินไป</strong>》เปิดการแสดงปฐมทัศน์ที่โรงละครคลาวด์เกต
+      </p>
+      <p style="margin-bottom: 3mm;">
+        《KIDS》ใช้เสียงพึมพำช่วงสุดท้ายของคุณแม่ในฮอสพิซเป็นเสียงประกอบ สะเทือนใจผู้ชมอย่างลึกซึ้ง
+        และคว้า<strong>รางวัลใหญ่ศิลปะการแสดง Taishin Arts Award ครั้งที่ 15</strong>
+        ผลงานนี้ได้รับคัดเลือกเข้าสู่แพลตฟอร์ม Aerowaves 2017 และทัวร์ไปเดนมาร์ก แคนาดา เยอรมนี
+        ปักกิ่ง ฮ่องกง และสิงคโปร์
+      </p>
+      <p>
+        นอกจากการออกแบบท่าเต้น ผมยังออกแบบดนตรีให้ผลงานของตัวเองด้วย
+        ปู่ทวดของผมเป็นหมอดูตาบอด ปู่เป็นนักดนตรีแจ๊ส พ่อเป็นช่างภาพ —
+        ผมได้รับ<em>ประสาทสัมผัสทางเสียงและภาพอันคมชัด</em>มาจากสายเลือดครอบครัว
+        หลังโควิดปี 2020 ผมเปลี่ยนพลังสร้างสรรค์ไปสู่การศึกษาศิลปะ
+        และในช่วงหลังได้ต่อยอดพลังนี้สู่การทำสตาร์ทอัพ AI โดยสร้าง
+        <strong>Grapply AI Platform</strong> ขึ้นด้วยตัวเอง
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">II.</span>
+      <h2>ประสบการณ์การทำงาน</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2020</em> — 2025</div>
+      <div>
+        <h3 class="job-title">ครูศิลปะและนักออกแบบท่าเต้น</h3>
+        <span class="job-org">Liu KuanHsiang Studio, ไต้หวัน</span>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2016</em> — 2020</div>
+      <div>
+        <h3 class="job-title">นักออกแบบท่าเต้นและผู้กำกับ</h3>
+        <span class="job-org">Cloud Gate Culture & Arts Foundation, ไทเป</span>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2011</em> — 2016</div>
+      <div>
+        <h3 class="job-title">ครูศิลปะและนักเต้น</h3>
+        <span class="job-org">HORSE Dance Theatre, ไทเป</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">III.</span>
+      <h2>เกียรติประวัติสำคัญ</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="awards">
+      <article class="award">
+        <div class="award-num">★</div>
+        <div>
+          <h3 class="award-title">รางวัลใหญ่ศิลปะการแสดง Taishin Arts Award ครั้งที่ 15 <em>(2017)</em></h3>
+          <p class="award-desc">
+            <strong>เกียรติยศสูงสุดของวงการศิลปะไต้หวัน</strong> ได้รับจากผลงาน《KIDS》
+            ประวัติการเข้ารอบ: Taishin ครั้งที่ 12《Nothing》(2013) <span class="sep">·</span>
+            ครั้งที่ 13《Hero》(2014) <span class="sep">·</span>
+            ครั้งที่ 14《Into the Wild》(2015) <span class="sep">·</span>
+            Taoyuan Film Festival "Taiwan Award"《The Metamorphosis》(2022)
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— ภาคผนวก หน้าต่อไป —</em>
+    <span>ภาคผนวก 01 / 02</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. II · ภาคผนวก 02 · Appendix</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IV.</span>
+      <h2>ผลงานคัดสรร — <em>ทัวร์นานาชาติและผลงานสำคัญ</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="projects appendix-works">
+      <div class="project">
+        <div class="project-num">2013</div>
+        <div>
+          <h3 class="project-title">《Nothing》 Music Unlimited Program</h3>
+          <p class="project-desc">
+            กำกับร่วมกับ Taipei Chamber Singers <span class="sep">·</span>
+            <strong>เข้ารอบ Taishin Arts Award ครั้งที่ 12</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2014</div>
+        <div>
+          <h3 class="project-title">《Hero วีรบุรุษ》</h3>
+          <p class="project-desc">
+            ออกแบบท่าเต้นและแสดง <span class="sep">·</span> ผลงานเดี่ยวชิ้นแรกในอาชีพ อุทิศแด่คุณพ่อ <span class="sep">·</span>
+            <strong>เข้ารอบ Taishin Arts Award ครั้งที่ 13</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2015</div>
+        <div>
+          <h3 class="project-title">《Two Duet》</h3>
+          <p class="project-desc">
+            ออกแบบท่าเต้นร่วมกับ Chien Ching-Ying, Wu Kong-Chen (ผู้อำนวยการศิลป์ HORSE), Yeh Ming-Hwa <span class="sep">·</span>
+            <strong>ได้รับเชิญเข้าร่วมเทศกาลศิลปะนานาชาติเม็กซิโกครั้งแรก</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2015</div>
+        <div>
+          <h3 class="project-title">《Into the Wild》</h3>
+          <p class="project-desc">
+            สร้างสรรค์ที่ Songshan Cultural and Creative Park Lab <span class="sep">·</span>
+            <strong>เข้ารอบ Taishin Arts Award ครั้งที่ 14</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2016</div>
+        <div>
+          <h3 class="project-title">《KIDS — สิ่งที่ผมรู้มากเกินไป》 — ทัวร์นานาชาติ</h3>
+          <p class="project-desc">
+            เปิดการแสดงปฐมทัศน์ที่ Cloud Gate Theatre <span class="sep">·</span>
+            <strong>คว้ารางวัลใหญ่ศิลปะการแสดง Taishin Arts Award ครั้งที่ 15 (2017)</strong> <span class="sep">·</span>
+            ทัวร์: Aerowaves Spring Forward (ยุโรป), PuSh International Performing Arts Festival (แคนาดา),
+            Internationale Tanzmesse NRW (เยอรมนี), ปักกิ่ง, ฮ่องกง, สิงคโปร์, เดนมาร์ก
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2017</div>
+        <div>
+          <h3 class="project-title">《KARMA ผู้ถูกทอดทิ้ง》</h3>
+          <p class="project-desc">
+            ได้รับมอบหมายสร้างสรรค์และผลิตโดย <strong>Cloud Gate Culture & Arts Foundation</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2018</div>
+        <div>
+          <h3 class="project-title">《Metamorphose แปรสภาพ》</h3>
+          <p class="project-desc">
+            ได้รับมอบหมายจาก <strong>Cloud Gate Culture & Arts Foundation</strong>
+            สร้างสรรค์ให้ <strong>Cloud Gate 2</strong> เป็นครั้งแรก
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2018</div>
+        <div>
+          <h3 class="project-title">《All About the Brutality》</h3>
+          <p class="project-desc">
+            ออกแบบท่าเต้นให้ <strong>National Theater & Concert Hall ไต้หวัน</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2020</div>
+        <div>
+          <h3 class="project-title">《The Power House》</h3>
+          <p class="project-desc">
+            นักแสดง กำกับโดย Lo Ching-Jen <span class="sep">·</span>
+            ได้รับเชิญจาก <strong>Taiwan Creative Content Agency (TAICCA)</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2021</div>
+        <div>
+          <h3 class="project-title">《The Metamorphosis》 — การแสดงภาพออนไลน์</h3>
+          <p class="project-desc">
+            กำกับภาพยนตร์การแสดงออนไลน์ <span class="sep">·</span>
+            <strong>เข้ารอบ Taoyuan Film Festival "Taiwan Award"</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title">《Taiwan Hip-Hop Food Bus》</h3>
+          <p class="project-desc">
+            สร้างสรรค์เพลงแร็พ <span class="sep">·</span> ผลิตโดยการเชิญของกรมวัฒนธรรม
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title">《BuddhaVerse จักรวาลวิหาร》</h3>
+          <p class="project-desc">
+            ได้รับทุนประจำจาก <strong>National Culture and Arts Foundation</strong> <span class="sep">·</span>
+            ได้รับเลือกเข้า <strong>Guling Street Avant-Garde Theatre Festival</strong>
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title">《SH0VA / AI SH69VA》</h3>
+          <p class="project-desc">
+            ได้รับทุนจาก <strong>National Culture and Arts Foundation</strong> <span class="sep">·</span>
+            ได้รับเชิญจาก <strong>Taishin Bank</strong> แสดงในงานย้อนรอย Taishin Arts Award <span class="sep">·</span>
+            วิชวลเวทีหลักสร้างด้วย <strong>เทคโนโลยี Generative AI</strong> —
+            ผลงานตัวแทนของการบูรณาการ AI เข้ากับการแสดงสด
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2023</div>
+        <div>
+          <h3 class="project-title">《Koji Pottery Dance》</h3>
+          <p class="project-desc">
+            ได้รับทุนประจำจาก <strong>National Culture and Arts Foundation</strong> <span class="sep">·</span>
+            มรดกวัฒนธรรม × ท่าเต้นร่วมสมัย
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">V.</span>
+      <h2>ขอบเขตการสร้างสรรค์</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        ออกแบบท่าเต้น <span class="sep">·</span> กำกับ <span class="sep">·</span> บัลเล่ต์คลาสสิก <span class="sep">·</span>
+        เต้นร่วมสมัย <span class="sep">·</span> เต้นจีนดั้งเดิม <span class="sep">·</span> Improvisation สำหรับเด็กเล็ก <span class="sep">·</span>
+        <strong>แต่งและเรียบเรียงดนตรี (Logic Pro)</strong> <span class="sep">·</span> กำกับภาพยนตร์และตัดต่อ <span class="sep">·</span>
+        <strong>AI Visual / Music / Video Creation</strong> <span class="sep">·</span> ออกแบบเวทีมัลติมีเดีย
+      </p>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— ภาคผนวก จบ —</em>
+    <span>ภาคผนวก 02 / 02</span>
+  </div>
+</article>
+
+</div><!-- /#lang-th -->
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════ CHINESE VERSION ═════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<div class="lang-group" id="lang-zh">
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 01</div>
+  <nav class="lang-switch-inline" aria-label="Language switcher">
+    <a class="lang-btn" href="#lang-th" data-lang="th">ไทย</a>
+    <a class="lang-btn" href="#lang-en" data-lang="en">EN</a>
+    <a class="lang-btn current" href="#lang-zh" data-lang="zh">Chinese</a>
+  </nav>
+
+  <header class="resume-header">
+    <div class="header-text">
+      <div class="header-label">履歷 · Curriculum Vitæ</div>
+      <h1 class="name">KuanHsiang Liu <span class="paren">(Kent)</span></h1>
+      <p class="tagline">AI 創辦人 <span class="sep">·</span> 國家級獲獎創作者 <span class="sep">·</span> 雙語教育者</p>
+      <div class="contact">
+        <span>泰國 羅勇府</span>
+        <span class="sep">✦</span>
+        <span><strong><a href="mailto:kentliuai08@gmail.com">kentliuai08@gmail.com</a></strong></span>
+        <span class="sep">✦</span>
+        <span>應徵：電腦教師（程式設計與機器人）— Montfort College Primary，2026 年 5 月</span>
+      </div>
+    </div>
+    <figure class="photo-frame">
+      <img src="509313071_10233500397284836_262950069320019830_n.jpg" alt="KuanHsiang Liu (Kent)">
+    </figure>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">I.</span>
+      <h2>個人簡介</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        我是一位跨領域的教育工作者，集 <strong>AI 創業、國家級獲獎創作、雙語教學</strong> 於一身。
+        目前為 <strong>Grapply AI 平台</strong>的創辦人，
+        <strong>第 15 屆台新藝術獎表演藝術大獎</strong>（台灣藝術界最高榮譽）得主，
+        並曾於 2024–2025 年在泰國烏汶府 Trakan Phuet Phon School 擔任全職<strong>英文與中文教師</strong>。
+      </p>
+      <p>
+        我的獨特價值在於三重身份的交會：<strong>一位打造真實產品的 AI 創辦人、一位將 AI 運用於專業舞台創作的國家級藝術家、一位具備泰國課堂經驗的雙語教師。</strong>
+        我要帶給 Montfort 學生的，不只是如何操作程式工具 —
+        而是 <strong>如何運用 AI 與數位工具說出自己的故事、打造屬於自己的小小應用程式。</strong>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">II.</span>
+      <h2>關於 Grapply — <em>我創辦的 AI 平台</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Grapply</strong> 是我獨立打造並正在營運的 AI SaaS 平台，協助中小企業以 AI 撰寫政府補助計畫書。
+        在台灣，一份 40–50 頁的計畫書傳統上需要<strong>數週到數月</strong>，
+        並花費 <strong>新台幣 50,000–150,000 元以上的顧問費</strong>。
+        Grapply 將整個流程壓縮至<strong>兩小時以內</strong>，
+        透過對話式引導、RAG 知識檢索與自動化文件生成技術完成。
+      </p>
+      <dl class="role-lines">
+        <div class="row"><dt>我的角色</dt><dd>獨立創辦人 — 負責產品設計、AI 工作流程、全端實作與市場推廣。</dd></div>
+        <div class="row"><dt>我的方法</dt><dd>以 AI 協作的 <em>「Vibe Coding」</em>工作流，由 Claude Code、Claude、Cursor、ChatGPT 與 Gemini 驅動 — 我主導產品邏輯與設計決策，AI 負責實作細節。</dd></div>
+      </dl>
+      <p>
+        這份經驗讓我深刻理解孩子在 AI 時代真正需要的是什麼：不是背誦語法，而是
+        <strong>學會如何在 AI 的協助下，把自己的想法變成真實可運作的作品。</strong>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">III.</span>
+      <h2>創作作品 — <em>國家級獎項與 AI 於專業藝術的應用</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 3mm;">
+        在台灣，我是少數同時擁有<strong>國家級藝術榮譽</strong>，
+        並將<strong>生成式 AI 運用於專業舞台作品</strong>的創作者之一：
+      </p>
+    </div>
+    <div class="awards">
+      <article class="award">
+        <div class="award-num">01</div>
+        <div>
+          <h3 class="award-title">「KIDS 我知道的太多了」</h3>
+          <p class="award-desc">
+            <strong>第 15 屆台新藝術獎表演藝術大獎</strong>得主（台灣藝術界最高榮譽）。
+            曾受邀於丹麥、加拿大（PuSh 藝術節）、德國（Tanzmesse NRW）、北京、香港與新加坡等國際藝術節巡演。
+          </p>
+          <a class="project-video" href="https://www.youtube.com/watch?v=wlE_-LyYHtQ" target="_blank" rel="noopener" aria-label="於 YouTube 觀看《我知道的太多了》">
+            <img src="https://img.youtube.com/vi/wlE_-LyYHtQ/hqdefault.jpg" alt="《我知道的太多了》作品片段">
+            <span class="play-glyph"></span>
+            <span class="video-label"><em>觀看作品片段</em> · YouTube</span>
+          </a>
+        </div>
+      </article>
+      <article class="award">
+        <div class="award-num">02</div>
+        <div>
+          <h3 class="award-title">「變形記 The Metamorphosis」</h3>
+          <p class="award-desc">
+            自編自導網路電影，<strong>入圍桃園電影節台灣獎</strong>。
+          </p>
+          <a class="project-photo" href="https://star.ettoday.net/news/2294946" target="_blank" rel="noopener" aria-label="閱讀《變形記》於 ETtoday 的報導">
+            <figure>
+              <div class="photo-frame">
+                <img src="metamorphose_taoyuan.jpg" alt="《變形記》電影劇照">
+              </div>
+              <figcaption>
+                ▲《變形記》結合舞蹈電影和魔幻風格。（圖／桃園電影節提供）
+                <span class="source">ETtoday ↗</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+      <article class="award">
+        <div class="award-num">03</div>
+        <div>
+          <h3 class="award-title">「SH0VA 濕婆神」</h3>
+          <p class="award-desc">
+            獲<strong>台新銀行</strong>邀請於台新藝術獎回顧展演出。
+            作品以<strong>大量 AI 生成視覺</strong>作為核心舞台意象 —
+            是我將生成式 AI 整合至專業劇場的旗艦之作。
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— 續下頁 —</em>
+    <span>Folio 01 / 03</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 02</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IV.</span>
+      <h2>我<em>每日使用</em>的 AI 創作工具</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="stack-list">
+      <span class="tool">Midjourney</span>
+      <span class="tool">ChatGPT <em>(DALL·E)</em></span>
+      <span class="tool">Gemini</span>
+      <span class="tool">Leonardo</span>
+      <span class="tool">Runway</span>
+      <span class="tool">Kling</span>
+      <span class="tool">Sora</span>
+      <span class="tool">Veo</span>
+      <span class="tool">Suno</span>
+      <span class="tool">Udio</span>
+      <span class="tool">ElevenLabs</span>
+      <span class="tool primary">Claude</span>
+      <span class="tool primary">Claude Code</span>
+      <span class="tool primary">Claude Cowork</span>
+      <span class="tool">Cursor</span>
+      <span class="tool">OpenAI Codex</span>
+    </div>
+    <p class="stack-note">
+      全部皆為瀏覽器平台 — 不需要複雜的剪輯軟體，非常適合小學電腦教室使用。
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">V.</span>
+      <h2>我能為 <em>Montfort 學生</em> 帶來什麼</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 2.5mm;">
+        我將專業的 AI 創作流程轉譯為
+        <strong>小學生可以用免費線上工具完成的小型專案</strong>：
+      </p>
+    </div>
+    <div class="projects">
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「活體故事書」Living Storybook</h3>
+          <p class="project-desc">
+            孩子寫一個故事 → 用 <strong>Midjourney/Gemini</strong> 生成角色 →
+            在 <strong>Scratch</strong> 中組裝成互動故事。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「30 秒 AI 電影」30-Second AI Movie</h3>
+          <p class="project-desc">
+            孩子想像一個故事 → 用 <strong>Runway/Kling</strong> 將文字轉成影片 → 完全不需要剪輯軟體。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「我的第一首歌」My First Song</h3>
+          <p class="project-desc">
+            孩子描述一種感覺或故事 → <strong>Suno</strong> 生成一首完整歌曲（含人聲、樂器、編曲）—
+            班歌、生日歌，或自己動畫的配樂。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「聲音魔法」Voice Magic</h3>
+          <p class="project-desc">
+            用 <strong>ElevenLabs</strong> 為自己創造的角色配音，聽見自己的故事活了起來。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「用程式碼畫畫」Drawing with Code</h3>
+          <p class="project-desc">
+            透過 <strong>Scratch pen blocks</strong>，孩子發現「一串指令也能變成一幅畫」。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「我的第一個網頁 / 迷你 App」My First Webpage / Mini-App</h3>
+          <p class="project-desc">
+            這是我最興奮想教的：<strong>用 AI 作為共創夥伴，做出真實能運作的東西</strong>。
+            一個個人介紹網頁、一個可以聊天的迷你 chatbot、一個小遊戲（猜數字、問答、抽獎）、
+            一個個人筆記小工具。孩子不需要懂任何程式語言 — 只要 <strong>描述他們想要什麼</strong>，
+            AI 就會幫忙打造出來。這正是我每天在 Grapply 做的事，我可以把這套方法教給孩子。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">「小小 AI 使用者」Little AI Users</h3>
+          <p class="project-desc">
+            如何與 AI 對話、如何判斷 AI 的回答是否正確、以及
+            <strong>什麼時候不該讓 AI 幫忙</strong> —
+            這是 2026 年每個小學生都需要的基本 AI 素養。
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arc">
+      <strong>在一個學期之內，學生可以完成一個完整的作品：</strong>
+      寫下自己的故事 <span class="arrow">→</span> 用 AI 畫出插圖
+      <span class="arrow">→</span> 用 Suno 譜寫主題曲
+      <span class="arrow">→</span> 用 Runway 製作動畫
+      <span class="arrow">→</span> 在 AI 協助下組合成互動網頁
+      <span class="arrow">→</span> <em>在期末成果展上呈現給家長</em>。
+    </div>
+
+    <p class="conviction">
+      我不只是「一位會用 AI 的老師」。我是
+      <strong>一位曾將 AI 運用於國家級舞台的藝術家，同時也是正在用 AI 打造真實 SaaS 產品的創辦人</strong>。
+      這份親身經歷讓我能告訴孩子：
+      <strong>科技不是冰冷的工具 — 它是能陪你一起打造值得驕傲作品的創作夥伴</strong>。
+    </p>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— 續下頁 —</em>
+    <span>Folio 02 / 03</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 03</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VI.</span>
+      <h2>教學經歷</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2024</em> — 2025</div>
+      <div>
+        <h3 class="job-title">英文與中文（國語）教師</h3>
+        <span class="job-org">Trakan Phuet Phon School，泰國烏汶府</span>
+        <p class="job-desc">
+          全職雙語教師，透過肢體、音樂與故事傳遞沉浸式英語與中文課程。
+          與泰國教師密切協作，深入熟悉泰國小學課堂節奏與家校溝通文化。
+        </p>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2011</em> — 2020</div>
+      <div>
+        <h3 class="job-title">編舞家與教育者</h3>
+        <span class="job-org">雲門文化藝術基金會 / HORSE 驫舞劇場，台北</span>
+        <p class="job-desc">
+          在台灣頂尖表演藝術機構擁有超過十年的編舞與教學經驗，
+          引導兒童與青少年進行創意表達。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VII.</span>
+      <h2>工具與可授科目</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="facts">
+      <div class="fact full">
+        <div class="lbl">可授科目</div>
+        Scratch · 運算思維 · AI 素養 · AI 圖像與音樂創作 · 數位故事 ·
+        <strong>AI 輔助網頁與迷你 App 開發</strong> · Chatbot 建構
+      </div>
+      <div class="fact">
+        <div class="lbl">辦公軟體</div>
+        Word、PowerPoint、Excel、Google Workspace — <em>流利運用並能融入教學</em>
+      </div>
+      <div class="fact">
+        <div class="lbl">創業經驗</div>
+        <strong>Grapply AI 平台創辦人</strong> — 每日實戰 AI 產品開發
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VIII.</span>
+      <h2>學歷與語言</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="facts">
+      <div class="fact">
+        <div class="lbl">學歷</div>
+        <strong>藝術學士</strong> — 國立台灣藝術大學，台北，台灣
+      </div>
+      <div class="fact">
+        <div class="lbl">語言</div>
+        <strong>中文（國語）：</strong>母語 &nbsp;•&nbsp;
+        <strong>英文：</strong>進階 (C1) — <em>能全英文授課</em> &nbsp;•&nbsp;
+        <strong>泰文：</strong>初階（學習中）
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IX.</span>
+      <h2>為什麼選擇 Montfort？</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="closing">
+      <p>
+        我目前定居於泰國羅勇府，正在尋找一個能讓我<strong>全心投入</strong>的長期教學機會。
+        Montfort College Primary 的雙語課程與美麗的河畔校園，正是我嚮往的環境。
+      </p>
+      <p>
+        我能帶給貴校學生的，不只是一堂電腦課 — 而是
+        <strong>一位 AI 創辦人的實戰視角、一位國家級獲獎藝術家的創作眼光、以及一位雙語教師的課堂溫度</strong>。
+        我希望孩子們在成長中相信：<strong>AI、程式與藝術，都是創造的語言</strong>。
+      </p>
+      <span class="avail">隨時可前往清邁進行面試與試教。</span>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— 主履歷 完 —</em>
+    <span>Folio 03 / 03</span>
+  </div>
+</article>
+
+<!-- ══════════════════════ APPENDIX · ZH ══════════════════════ -->
+<article class="page">
+  <div class="page-corner">Vol. II · 附件 01 · Appendix</div>
+
+  <header class="resume-header">
+    <div class="header-text">
+      <div class="header-label">附件補充 · Appendix · 藝術生涯檔案</div>
+      <h1 class="name">藝術生涯檔案</h1>
+      <p class="tagline">Kent Liu — <em>完整專業紀錄</em> <span class="sep">·</span> 2011 — 2023</p>
+      <div class="contact">
+        <span>編舞 <span class="sep">·</span> 導演 <span class="sep">·</span> 電影 <span class="sep">·</span> 多媒體創作</span>
+        <span class="sep">✦</span>
+        <span><em>這些創作根基，正是我教孩子把 AI、程式與數位工具當作表達語言的底氣</em></span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">I.</span>
+      <h2>專業背景</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 3mm;">
+        出生於台灣南投縣鹿谷鄉竹豐村。在國立台灣藝術大學舞蹈系畢業之前，我加入
+        <strong>HORSE 驫舞劇場</strong>，從此展開創作生涯。2014 年，我的第一支長篇編舞作品
+        《<strong>英雄</strong>》獻給已故的父親；2015 年，《兩對》受邀參加第一屆墨西哥國際藝術節，
+        同年《<strong>我知道的太多了</strong>》於雲門劇場首演。
+      </p>
+      <p style="margin-bottom: 3mm;">
+        《我知道的太多了》以我母親在安寧病房臨終前的囈語錄音作為配樂，深刻震撼觀眾，
+        並榮獲<strong>第十五屆台新藝術獎表演藝術大獎</strong>。此作獲選 2017 年 Aerowaves 平台，
+        巡演至丹麥、加拿大、德國、北京、香港、新加坡等地。
+      </p>
+      <p>
+        除了編舞，我也親自為作品設計音樂。我的曾祖父是盲眼算命師、祖父是爵士樂手、父親是攝影師 —
+        我從家族血脈繼承了<em>敏銳的聽覺與視覺感官</em>。2020 年疫情過後，我將創作能量轉化為藝術教育的種子；
+        近年更將這份能量延伸到 AI 創業，獨立打造 <strong>Grapply AI 平台</strong>。
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">II.</span>
+      <h2>工作經歷</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2020</em> — 2025</div>
+      <div>
+        <h3 class="job-title">藝術教師與編舞家</h3>
+        <span class="job-org">劉冠詳工作室，台灣</span>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2016</em> — 2020</div>
+      <div>
+        <h3 class="job-title">編舞家與導演</h3>
+        <span class="job-org">雲門文化藝術基金會，台北</span>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2011</em> — 2016</div>
+      <div>
+        <h3 class="job-title">藝術教師與舞者</h3>
+        <span class="job-org">HORSE 驫舞劇場，台北</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">III.</span>
+      <h2>重要榮譽</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="awards">
+      <article class="award">
+        <div class="award-num">★</div>
+        <div>
+          <h3 class="award-title">第十五屆台新藝術獎 — 表演藝術大獎 <em>(2017)</em></h3>
+          <p class="award-desc">
+            <strong>台灣藝術界最高榮譽</strong>，以《我知道的太多了》獲獎。
+            入圍紀錄：第十二屆台新藝術獎《無》(2013) <span class="sep">·</span>
+            第十三屆《英雄》(2014) <span class="sep">·</span>
+            第十四屆《野外》(2015) <span class="sep">·</span>
+            桃園電影節「台灣獎」《變形記》(2022)。
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— 附件 續下頁 —</em>
+    <span>附件 01 / 02</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. II · 附件 02 · Appendix</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IV.</span>
+      <h2>作品精選 — <em>國際巡演與重要創作</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="projects appendix-works">
+      <div class="project">
+        <div class="project-num">2013</div>
+        <div>
+          <h3 class="project-title">《無》 Music Unlimited Program</h3>
+          <p class="project-desc">
+            與台北室內合唱團合作導演 <span class="sep">·</span> <strong>入圍第十二屆台新藝術獎</strong>。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2014</div>
+        <div>
+          <h3 class="project-title">《英雄》 Hero</h3>
+          <p class="project-desc">
+            編舞與表演 <span class="sep">·</span> 個人首部長篇作品，獻給父親 <span class="sep">·</span>
+            <strong>入圍第十三屆台新藝術獎</strong>。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2015</div>
+        <div>
+          <h3 class="project-title">《兩對》 Two Duet</h3>
+          <p class="project-desc">
+            與簡晶瀅、吳孔臣（HORSE 藝術總監）、葉名樺共同編舞 <span class="sep">·</span>
+            <strong>受邀參加第一屆墨西哥國際藝術節</strong>。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2015</div>
+        <div>
+          <h3 class="project-title">《野外》 Into the Wild</h3>
+          <p class="project-desc">
+            於松山文創實驗室創作 <span class="sep">·</span> <strong>入圍第十四屆台新藝術獎</strong>。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2016</div>
+        <div>
+          <h3 class="project-title">《我知道的太多了》 KIDS — 國際巡演</h3>
+          <p class="project-desc">
+            於雲門劇場首演 <span class="sep">·</span> <strong>榮獲第十五屆台新藝術獎表演藝術大獎 (2017)</strong> <span class="sep">·</span>
+            巡演：Aerowaves Spring Forward（歐洲）、第十五屆 PuSh 國際表演藝術節（加拿大）、
+            Internationale Tanzmesse NRW（德國）、北京、香港、新加坡、丹麥。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2017</div>
+        <div>
+          <h3 class="project-title">《棄者》 KARMA</h3>
+          <p class="project-desc">
+            受<strong>雲門文化藝術基金會</strong>委託創作與製作。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2018</div>
+        <div>
+          <h3 class="project-title">《變態》 Metamorphose</h3>
+          <p class="project-desc">
+            受<strong>雲門文化藝術基金會</strong>委託，首度為<strong>雲門 2</strong> 創作。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2018</div>
+        <div>
+          <h3 class="project-title">《酷刑姿勢練習》 All About the Brutality</h3>
+          <p class="project-desc">
+            為<strong>台灣國家兩廳院</strong>編舞。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2020</div>
+        <div>
+          <h3 class="project-title">《文化內容發電站》 The Power House</h3>
+          <p class="project-desc">
+            演員，羅景壬導演 <span class="sep">·</span> 由<strong>台灣文化內容策進院 (TAICCA)</strong> 邀演。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2021</div>
+        <div>
+          <h3 class="project-title">《變形記》 The Metamorphosis — 線上影像展演</h3>
+          <p class="project-desc">
+            線上表演影片導演 <span class="sep">·</span> <strong>入圍桃園電影節「台灣獎」</strong>。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title">《台灣嘻哈美食巴士》</h3>
+          <p class="project-desc">
+            饒舌歌曲創作 <span class="sep">·</span> 由文化局邀請製作。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title">《宇宙神廟》 BuddhaVerse</h3>
+          <p class="project-desc">
+            獲<strong>國家文化藝術基金會</strong>常態補助 <span class="sep">·</span> 入選<strong>牯嶺街前衛藝術節</strong>。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title">《毀滅之舞測試版》 SH0VA / AI SH69VA</h3>
+          <p class="project-desc">
+            獲<strong>國家文化藝術基金會</strong>補助 <span class="sep">·</span>
+            受<strong>台新銀行</strong>邀請於台新藝術獎回顧展演出 <span class="sep">·</span>
+            作品核心舞台視覺採用<strong>生成式 AI 技術</strong>製作 — 我將 AI 與現場表演結合的代表作。
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2023</div>
+        <div>
+          <h3 class="project-title">《交趾陶之舞》</h3>
+          <p class="project-desc">
+            獲<strong>國家文化藝術基金會</strong>常態補助 <span class="sep">·</span> 文化遺產 × 當代編舞。
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">V.</span>
+      <h2>創作領域</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        編舞 <span class="sep">·</span> 導演 <span class="sep">·</span> 古典芭蕾 <span class="sep">·</span>
+        現代舞 <span class="sep">·</span> 中國傳統舞 <span class="sep">·</span> 幼兒即興舞蹈 <span class="sep">·</span>
+        <strong>音樂作曲與編曲 (Logic Pro)</strong> <span class="sep">·</span> 電影導演與剪輯 <span class="sep">·</span>
+        <strong>AI 影像、音樂、影片創作</strong> <span class="sep">·</span> 多媒體舞台設計
+      </p>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— 附件 完 —</em>
+    <span>附件 02 / 02</span>
+  </div>
+</article>
+
+</div><!-- /#lang-zh -->
+
+<!-- ══════════════════════════════════════════════════════════════ -->
+<!-- ═══════════════════════ ENGLISH VERSION ═════════════════════ -->
+<!-- ══════════════════════════════════════════════════════════════ -->
+<div class="lang-group" id="lang-en">
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 01</div>
+  <nav class="lang-switch-inline" aria-label="Language switcher">
+    <a class="lang-btn" href="#lang-th" data-lang="th">ไทย</a>
+    <a class="lang-btn current" href="#lang-en" data-lang="en">EN</a>
+    <a class="lang-btn" href="#lang-zh" data-lang="zh">Chinese</a>
+  </nav>
+
+  <header class="resume-header">
+    <div class="header-text">
+      <div class="header-label">Curriculum Vitæ</div>
+      <h1 class="name">KuanHsiang Liu <span class="paren">(Kent)</span></h1>
+      <p class="tagline">AI Founder <span class="sep">·</span> Award-Winning Creator <span class="sep">·</span> Bilingual Educator</p>
+      <div class="contact">
+        <span>Rayong, Thailand</span>
+        <span class="sep">✦</span>
+        <span><strong><a href="mailto:kentliuai08@gmail.com">kentliuai08@gmail.com</a></strong></span>
+        <span class="sep">✦</span>
+        <span>Applying: Computer Teacher (Coding &amp; Robotics) — Montfort College Primary, May 2026</span>
+      </div>
+    </div>
+    <figure class="photo-frame">
+      <img src="509313071_10233500397284836_262950069320019830_n.jpg" alt="KuanHsiang Liu (Kent)">
+    </figure>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">I.</span>
+      <h2>Personal Summary</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        I am a cross-disciplinary educator combining <strong>AI entrepreneurship, national-award-winning creative work, and bilingual teaching</strong>.
+        Currently the founder of the <strong>Grapply AI platform</strong>, recipient of the
+        <strong>15th Taishin Arts Award Grand Prize for Performing Arts</strong>
+        (Taiwan's highest honor in the arts), and a former full-time <strong>English &amp; Chinese teacher</strong>
+        at Trakan Phuet Phon School, Ubon (2024–2025).
+      </p>
+      <p>
+        My unique value sits at the intersection of three identities: <strong>an AI founder who builds real products,
+        a national-award artist who uses AI in professional stage work, and a bilingual teacher with Thai classroom experience.</strong>
+        What I bring to Montfort students is not just how to operate coding tools — but
+        <strong>how to use AI and digital tools to tell their own stories and build their own little apps.</strong>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">II.</span>
+      <h2>About Grapply — <em>the AI Platform I Founded</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        <strong>Grapply</strong> is an AI SaaS platform I independently built and currently operate,
+        helping SMEs write government grant proposals with AI. In Taiwan, a 40–50 page grant proposal
+        traditionally takes <strong>weeks to months</strong> and costs <strong>NT$50,000–150,000+ in consulting fees</strong>.
+        Grapply compresses this entire workflow into <strong>under two hours</strong>, using conversational guidance,
+        RAG knowledge retrieval, and automated document generation.
+      </p>
+      <dl class="role-lines">
+        <div class="row"><dt>My role</dt><dd>Solo founder — product design, AI workflow, full-stack implementation, and go-to-market.</dd></div>
+        <div class="row"><dt>My method</dt><dd>AI-assisted <em>"Vibe Coding"</em> workflow powered by Claude Code, Claude, Cursor, ChatGPT, and Gemini — I lead product logic and design decisions; AI handles implementation details.</dd></div>
+      </dl>
+      <p>
+        This experience gives me deep insight into what children truly need in the AI era: not memorizing syntax,
+        but <strong>learning how to turn their ideas into real, working creations with the help of AI.</strong>
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">III.</span>
+      <h2>Creative Portfolio — <em>National Awards &amp; AI in Professional Art</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 3mm;">
+        I am among the few in Taiwan who hold <strong>national-level art honors</strong>
+        AND have applied <strong>generative AI in professional stage productions</strong>:
+      </p>
+    </div>
+    <div class="awards">
+      <article class="award">
+        <div class="award-num">01</div>
+        <div>
+          <h3 class="award-title">"KIDS" <span class="cn">(我知道的太多了)</span></h3>
+          <p class="award-desc">
+            Winner of the <strong>15th Taishin Arts Award Grand Prize for Performing Arts</strong>
+            (Taiwan's highest art honor). Toured at international festivals in Denmark, Canada (PuSh Festival),
+            Germany (Tanzmesse NRW), Beijing, Hong Kong, and Singapore.
+          </p>
+          <a class="project-video" href="https://www.youtube.com/watch?v=wlE_-LyYHtQ" target="_blank" rel="noopener" aria-label="Watch KIDS on YouTube">
+            <img src="https://img.youtube.com/vi/wlE_-LyYHtQ/hqdefault.jpg" alt="KIDS — performance excerpt">
+            <span class="play-glyph"></span>
+            <span class="video-label"><em>Watch on YouTube</em> · KIDS</span>
+          </a>
+        </div>
+      </article>
+      <article class="award">
+        <div class="award-num">02</div>
+        <div>
+          <h3 class="award-title">"The Metamorphosis" <span class="cn">(變形記)</span></h3>
+          <p class="award-desc">
+            Self-written and directed online film, <strong>nominated for the Taiwan Award at Taoyuan Film Festival</strong>.
+          </p>
+          <a class="project-photo" href="https://star.ettoday.net/news/2294946" target="_blank" rel="noopener" aria-label="Read The Metamorphosis coverage on ETtoday">
+            <figure>
+              <div class="photo-frame">
+                <img src="metamorphose_taoyuan.jpg" alt="The Metamorphosis — film still">
+              </div>
+              <figcaption>
+                ▲ <em>The Metamorphosis</em> blends dance film with magical-realist aesthetics. (Photo / Taoyuan Film Festival)
+                <span class="source">ETtoday ↗</span>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </article>
+      <article class="award">
+        <div class="award-num">03</div>
+        <div>
+          <h3 class="award-title">"SH0VA" <span class="cn">(濕婆神)</span></h3>
+          <p class="award-desc">
+            Invited by <strong>Taishin Bank</strong> to perform at the Taishin Arts Award retrospective.
+            The piece used <strong>extensive AI-generated visuals</strong> as its core stage imagery —
+            my flagship work integrating generative AI into professional theatre.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— continued —</em>
+    <span>Folio 01 / 03</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 02</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IV.</span>
+      <h2>AI Creator Stack I Use <em>Daily</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="stack-list">
+      <span class="tool">Midjourney</span>
+      <span class="tool">ChatGPT <em>(DALL·E)</em></span>
+      <span class="tool">Gemini</span>
+      <span class="tool">Leonardo</span>
+      <span class="tool">Runway</span>
+      <span class="tool">Kling</span>
+      <span class="tool">Sora</span>
+      <span class="tool">Veo</span>
+      <span class="tool">Suno</span>
+      <span class="tool">Udio</span>
+      <span class="tool">ElevenLabs</span>
+      <span class="tool primary">Claude</span>
+      <span class="tool primary">Claude Code</span>
+      <span class="tool primary">Claude Cowork</span>
+      <span class="tool">Cursor</span>
+      <span class="tool">OpenAI Codex</span>
+    </div>
+    <p class="stack-note">
+      All are browser-based platforms — no complex editing software, perfect for primary school computer classrooms.
+    </p>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">V.</span>
+      <h2>What I Can Bring to <em>Montfort Students</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 2.5mm;">
+        I translate professional AI creative workflows into <strong>bite-sized projects primary students can complete using free online tools</strong>:
+      </p>
+    </div>
+    <div class="projects">
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"Living Storybook"</h3>
+          <p class="project-desc">
+            Kids write a story → generate characters with <strong>Midjourney/Gemini</strong>
+            → assemble as an interactive story in <strong>Scratch</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"30-Second AI Movie"</h3>
+          <p class="project-desc">
+            Kids imagine a story → turn text into a video with <strong>Runway/Kling</strong>
+            → zero editing software required.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"My First Song"</h3>
+          <p class="project-desc">
+            Kids describe a feeling or story → <strong>Suno</strong> generates a full song (vocals, instruments, arrangement)
+            — class songs, birthday songs, soundtracks for their own animations.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"Voice Magic"</h3>
+          <p class="project-desc">
+            Use <strong>ElevenLabs</strong> to voice the characters they create, hearing their own stories come alive.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"Drawing with Code"</h3>
+          <p class="project-desc">
+            Through <strong>Scratch pen blocks</strong>, kids discover that "a sequence of instructions can become a picture."
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"My First Webpage / Mini-App"</h3>
+          <p class="project-desc">
+            This is what I'm most excited to teach: <strong>using AI as a co-builder to create real working things</strong>.
+            A personal introduction webpage. A mini chatbot you can talk to. A small game (number guessing, quiz, raffle).
+            A little personal note-taking tool. Kids don't need to know any programming language — they just need to
+            <strong>describe what they want</strong>, and AI helps build it. This is exactly what I do every day at Grapply,
+            and I can teach this methodology to children.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num"></div>
+        <div>
+          <h3 class="project-title">"Little AI Users"</h3>
+          <p class="project-desc">
+            How to chat with AI, how to judge whether AI's answers are correct, and <strong>when NOT to let AI help</strong>
+            — essential AI literacy for every primary student in 2026.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="arc">
+      <strong>Across one semester, students can build one complete project:</strong>
+      write their own story <span class="arrow">→</span> illustrate it with AI
+      <span class="arrow">→</span> compose a theme song with Suno
+      <span class="arrow">→</span> animate it with Runway
+      <span class="arrow">→</span> assemble into an interactive webpage with AI assistance
+      <span class="arrow">→</span> <em>present to parents at the end-of-term showcase.</em>
+    </div>
+
+    <p class="conviction">
+      I am not just "a teacher who uses AI." I am <strong>an artist who has used AI on national stages
+      AND a founder actively building real SaaS products with AI</strong>. This lived experience lets me
+      show children that <strong>technology isn't a cold tool — it's a creative partner that helps them
+      build things they're proud of</strong>.
+    </p>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— continued —</em>
+    <span>Folio 02 / 03</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. I · Folio 03</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VI.</span>
+      <h2>Teaching Experience</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2024</em> — 2025</div>
+      <div>
+        <h3 class="job-title">English &amp; Chinese (Mandarin) Teacher</h3>
+        <span class="job-org">Trakan Phuet Phon School, Ubon, Thailand</span>
+        <p class="job-desc">
+          Full-time bilingual teacher delivering immersive English and Mandarin lessons integrating movement,
+          music, and storytelling. Collaborated closely with Thai co-teachers; deeply familiar with Thai primary
+          classroom rhythms and home-school communication culture.
+        </p>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2011</em> — 2020</div>
+      <div>
+        <h3 class="job-title">Choreographer &amp; Educator</h3>
+        <span class="job-org">Cloud Gate Foundation / HORSE Dance Theater, Taipei</span>
+        <p class="job-desc">
+          Over a decade of choreography and teaching at Taiwan's leading performing arts institutions,
+          with extensive experience guiding children and youth in creative expression.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VII.</span>
+      <h2>Tools &amp; Teaching Topics</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="facts">
+      <div class="fact full">
+        <div class="lbl">Teachable Subjects</div>
+        Scratch · Computational Thinking · AI Literacy · AI Image &amp; Music Creation · Digital Storytelling ·
+        <strong>AI-assisted Webpage &amp; Mini-App Development</strong> · Chatbot Building
+      </div>
+      <div class="fact">
+        <div class="lbl">Office Software</div>
+        Word, PowerPoint, Excel, Google Workspace — <em>fluent and able to integrate into teaching</em>
+      </div>
+      <div class="fact">
+        <div class="lbl">Entrepreneurial Experience</div>
+        <strong>Founder of Grapply AI Platform</strong> — daily hands-on AI product development
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">VIII.</span>
+      <h2>Education &amp; Languages</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="facts">
+      <div class="fact">
+        <div class="lbl">Education</div>
+        <strong>Bachelor of Arts</strong> — National Taiwan University of Arts, Taipei, Taiwan
+      </div>
+      <div class="fact">
+        <div class="lbl">Languages</div>
+        <strong>Chinese (Mandarin):</strong> Native &nbsp;•&nbsp;
+        <strong>English:</strong> Advanced (C1) — <em>capable of full English instruction</em> &nbsp;•&nbsp;
+        <strong>Thai:</strong> Basic (learning)
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IX.</span>
+      <h2>Why Montfort?</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="closing">
+      <p>
+        I currently live in Rayong, Thailand, and am seeking a long-term teaching opportunity where I can
+        <strong>invest myself fully</strong>. Montfort College Primary's Bilingual Program and beautiful
+        riverside campus are exactly the kind of environment I'm looking for.
+      </p>
+      <p>
+        What I bring to your students is not just one computer class — it is <strong>the practical perspective
+        of an AI founder, the creative eye of a national-award artist, and the classroom warmth of a bilingual
+        teacher</strong>. I want children to grow up believing that <strong>AI, coding, and art are all languages
+        of creation.</strong>
+      </p>
+      <span class="avail">Available to travel to Chiang Mai for interview and demo lesson at your convenience.</span>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— end of main CV —</em>
+    <span>Folio 03 / 03</span>
+  </div>
+</article>
+
+<!-- ══════════════════════ APPENDIX · EN ══════════════════════ -->
+<article class="page">
+  <div class="page-corner">Vol. II · Appendix 01</div>
+
+  <header class="resume-header">
+    <div class="header-text">
+      <div class="header-label">Appendix · Artistic Career Archive</div>
+      <h1 class="name">Artistic Career Archive</h1>
+      <p class="tagline">Kent Liu — <em>Complete Professional Record</em> <span class="sep">·</span> 2011 — 2023</p>
+      <div class="contact">
+        <span>Choreography <span class="sep">·</span> Direction <span class="sep">·</span> Film <span class="sep">·</span> Multimedia Creation</span>
+        <span class="sep">✦</span>
+        <span><em>These creative foundations are precisely what allow me to teach children to treat AI, code and digital tools as languages of expression</em></span>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">I.</span>
+      <h2>Professional Background</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p style="margin-bottom: 3mm;">
+        Born in Zhufeng Village, Lugu Township, Nantou County, Taiwan. Before graduating from the Dance Department
+        of National Taiwan University of Arts, I joined <strong>HORSE Dance Theatre</strong>, where my creative
+        career began. In 2014, my first full-length choreographic work, <em>Hero</em>, was dedicated to my late
+        father; in 2015, <em>Two Duet</em> was invited to the 1st Mexico International Arts Festival, and that same
+        year <em><strong>KIDS</strong></em> premiered at Cloud Gate Theater.
+      </p>
+      <p style="margin-bottom: 3mm;">
+        <em>KIDS</em> used an audio recording of my mother's final words in a hospice ward as its score, moving
+        audiences deeply and winning the <strong>15th Taishin Arts Award — Grand Prize for Performing Arts</strong>.
+        The work was selected for the 2017 Aerowaves platform and toured to Denmark, Canada, Germany, Beijing,
+        Hong Kong and Singapore.
+      </p>
+      <p>
+        Beyond choreography, I also compose the music for my own works. My great-grandfather was a blind fortune
+        teller, my grandfather a jazz musician, my father a photographer — I inherited from my family a
+        <em>heightened sense of hearing and sight</em>. After the pandemic in 2020, I redirected that creative
+        energy into arts education; in recent years I've extended it into AI entrepreneurship, independently
+        building the <strong>Grapply AI platform</strong>.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">II.</span>
+      <h2>Work Experience</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2020</em> — 2025</div>
+      <div>
+        <h3 class="job-title">Arts Teacher &amp; Choreographer</h3>
+        <span class="job-org">Kent Liu Studio, Taiwan</span>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2016</em> — 2020</div>
+      <div>
+        <h3 class="job-title">Choreographer &amp; Director</h3>
+        <span class="job-org">Cloud Gate Culture &amp; Arts Foundation, Taipei</span>
+      </div>
+    </div>
+    <div class="job">
+      <div class="job-years"><em>2011</em> — 2016</div>
+      <div>
+        <h3 class="job-title">Arts Teacher &amp; Dancer</h3>
+        <span class="job-org">HORSE Dance Theatre, Taipei</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">III.</span>
+      <h2>Honors &amp; Awards</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="awards">
+      <article class="award">
+        <div class="award-num">★</div>
+        <div>
+          <h3 class="award-title">15th Taishin Arts Award — Grand Prize for Performing Arts <em>(2017)</em></h3>
+          <p class="award-desc">
+            <strong>Taiwan's highest honor in the arts</strong>, awarded for <em>KIDS</em>.
+            Nominations: 12th Taishin Arts Award for <em>Wu</em> (2013) <span class="sep">·</span>
+            13th for <em>Hero</em> (2014) <span class="sep">·</span>
+            14th for <em>Into the Wild</em> (2015) <span class="sep">·</span>
+            Taoyuan Film Festival "Taiwan Award" for <em>The Metamorphosis</em> (2022).
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— appendix continues —</em>
+    <span>Appendix 01 / 02</span>
+  </div>
+</article>
+
+<article class="page">
+  <div class="page-corner">Vol. II · Appendix 02</div>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">IV.</span>
+      <h2>Selected Works — <em>International Tours &amp; Major Productions</em></h2>
+      <span class="dot"></span>
+    </div>
+    <div class="projects appendix-works">
+      <div class="project">
+        <div class="project-num">2013</div>
+        <div>
+          <h3 class="project-title"><em>Wu</em> — Music Unlimited Program</h3>
+          <p class="project-desc">
+            Directed in collaboration with the Taipei Chamber Singers <span class="sep">·</span>
+            <strong>Nominated for the 12th Taishin Arts Award</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2014</div>
+        <div>
+          <h3 class="project-title"><em>Hero</em></h3>
+          <p class="project-desc">
+            Choreography and performance <span class="sep">·</span> my first full-length work, dedicated to my father
+            <span class="sep">·</span> <strong>Nominated for the 13th Taishin Arts Award</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2015</div>
+        <div>
+          <h3 class="project-title"><em>Two Duet</em></h3>
+          <p class="project-desc">
+            Co-choreographed with Chien Ching-ying, Wu Kung-chen (HORSE Artistic Director) and Yeh Ming-hwa
+            <span class="sep">·</span> <strong>Invited to the 1st Mexico International Arts Festival</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2015</div>
+        <div>
+          <h3 class="project-title"><em>Into the Wild</em></h3>
+          <p class="project-desc">
+            Created at Songshan Cultural &amp; Creative Lab <span class="sep">·</span>
+            <strong>Nominated for the 14th Taishin Arts Award</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2016</div>
+        <div>
+          <h3 class="project-title"><em>KIDS</em> — International Tour</h3>
+          <p class="project-desc">
+            Premiered at Cloud Gate Theater <span class="sep">·</span>
+            <strong>Winner of the 15th Taishin Arts Award Grand Prize for Performing Arts (2017)</strong>
+            <span class="sep">·</span>
+            Tour: Aerowaves Spring Forward (Europe), 15th PuSh International Performing Arts Festival (Canada),
+            Internationale Tanzmesse NRW (Germany), Beijing, Hong Kong, Singapore, Denmark.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2017</div>
+        <div>
+          <h3 class="project-title"><em>KARMA</em></h3>
+          <p class="project-desc">
+            Commissioned and produced by the <strong>Cloud Gate Culture &amp; Arts Foundation</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2018</div>
+        <div>
+          <h3 class="project-title"><em>Metamorphose</em></h3>
+          <p class="project-desc">
+            Commissioned by the <strong>Cloud Gate Culture &amp; Arts Foundation</strong> — my first work created
+            for <strong>Cloud Gate 2</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2018</div>
+        <div>
+          <h3 class="project-title"><em>All About the Brutality</em></h3>
+          <p class="project-desc">
+            Choreographed for the <strong>National Theater &amp; Concert Hall of Taiwan</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2020</div>
+        <div>
+          <h3 class="project-title"><em>The Power House</em></h3>
+          <p class="project-desc">
+            Performer, directed by Lo Ching-jen <span class="sep">·</span> commissioned by the
+            <strong>Taiwan Creative Content Agency (TAICCA)</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2021</div>
+        <div>
+          <h3 class="project-title"><em>The Metamorphosis</em> — Online Film Presentation</h3>
+          <p class="project-desc">
+            Director of the online performance film <span class="sep">·</span>
+            <strong>Nominated for the Taoyuan Film Festival "Taiwan Award"</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title"><em>Taiwan Hip-Hop Food Bus</em></h3>
+          <p class="project-desc">
+            Original rap composition <span class="sep">·</span> produced at the invitation of the Cultural Bureau.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title"><em>BuddhaVerse</em></h3>
+          <p class="project-desc">
+            Supported by the <strong>National Culture &amp; Arts Foundation</strong> regular grant
+            <span class="sep">·</span> selected for the <strong>Guling Street Avant-garde Theatre Festival</strong>.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2022</div>
+        <div>
+          <h3 class="project-title"><em>SH0VA / AI SH69VA</em> — Dance of Destruction, Beta</h3>
+          <p class="project-desc">
+            Supported by the <strong>National Culture &amp; Arts Foundation</strong>
+            <span class="sep">·</span> invited by <strong>Taishin Bank</strong> to perform at the Taishin Arts Award
+            retrospective <span class="sep">·</span> the core stage visuals were built with
+            <strong>generative AI</strong> — my signature work fusing AI with live performance.
+          </p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="project-num">2023</div>
+        <div>
+          <h3 class="project-title"><em>Dance of the Koji Pottery</em></h3>
+          <p class="project-desc">
+            Supported by the <strong>National Culture &amp; Arts Foundation</strong> regular grant
+            <span class="sep">·</span> cultural heritage × contemporary choreography.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-head">
+      <span class="roman">V.</span>
+      <h2>Creative Domains</h2>
+      <span class="dot"></span>
+    </div>
+    <div class="body">
+      <p>
+        Choreography <span class="sep">·</span> direction <span class="sep">·</span> classical ballet
+        <span class="sep">·</span> modern dance <span class="sep">·</span> traditional Chinese dance
+        <span class="sep">·</span> early-childhood improvisation <span class="sep">·</span>
+        <strong>music composition &amp; arrangement (Logic Pro)</strong> <span class="sep">·</span>
+        film directing &amp; editing <span class="sep">·</span>
+        <strong>AI-generated image, music &amp; video creation</strong> <span class="sep">·</span>
+        multimedia stage design
+      </p>
+    </div>
+  </section>
+
+  <div class="page-foot">
+    <span>KuanHsiang Liu (Kent)</span>
+    <em>— end of appendix —</em>
+    <span>Appendix 02 / 02</span>
+  </div>
+</article>
+
+</div><!-- /#lang-en -->
+
+<script>
+  (function () {
+    const KEY = 'cv-lang';
+    const DEFAULT = 'th';
+    const buttons = document.querySelectorAll('.lang-btn');
+    const groups = document.querySelectorAll('.lang-group');
+
+    function setLang(lang) {
+      if (!lang || !document.getElementById('lang-' + lang)) lang = DEFAULT;
+      groups.forEach(g => g.classList.toggle('active', g.id === 'lang-' + lang));
+      document.documentElement.lang = lang;
+      try { localStorage.setItem(KEY, lang); } catch (e) {}
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    buttons.forEach(b => b.addEventListener('click', (e) => {
+      e.preventDefault();
+      setLang(b.dataset.lang);
+    }));
+
+    let saved;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    setLang(saved || DEFAULT);
+  })();
+
+</script>
+
+</body>
+</html>
