@@ -315,6 +315,51 @@
   .contact a { color: var(--mcp-blue-deep); text-decoration: none; border-bottom: 1px solid var(--mcp-blue); padding-bottom: 0.5px; }
   .contact a:hover { color: var(--mcp-blue); }
 
+  .intro-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 2mm;
+    margin-top: 3mm;
+    font-size: 9pt;
+    color: var(--mcp-ink);
+    text-decoration: none;
+    padding: 1.6mm 3mm 1.6mm 2mm;
+    border: 1px solid var(--mcp-blue);
+    background: var(--mcp-blue-soft);
+    transition: background 0.18s ease, transform 0.18s ease;
+  }
+  .intro-link:hover { background: #a8c9f5; transform: translateY(-0.2mm); }
+  .intro-link .play-sm {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5mm; height: 5mm;
+    background: var(--mcp-red);
+    border-radius: 999px;
+    flex-shrink: 0;
+    color: var(--mcp-paper);
+  }
+  .intro-link .play-sm::before {
+    content: "";
+    width: 0; height: 0;
+    border-left: 1.5mm solid currentColor;
+    border-top: 1mm solid transparent;
+    border-bottom: 1mm solid transparent;
+    margin-left: 0.4mm;
+  }
+  .intro-link .intro-text {
+    font-family: 'Sarabun', 'Montserrat', sans-serif;
+    font-size: 9.5pt;
+    font-weight: 500;
+    color: var(--mcp-navy);
+    letter-spacing: 0.01em;
+    line-height: 1.2;
+  }
+  .intro-link .intro-text strong {
+    font-weight: 700;
+    color: var(--mcp-blue-deep);
+  }
+
   .photo-frame {
     position: relative;
     width: 36mm;
@@ -1077,6 +1122,10 @@
         <span class="sep">✦</span>
         <span>สมัครตำแหน่ง: ครูคอมพิวเตอร์ (โค้ดดิ้งและหุ่นยนต์) — โรงเรียนมงฟอร์ตวิทยาลัย แผนกประถม, พฤษภาคม 2026</span>
       </div>
+      <a class="intro-link" href="https://youtube.com/shorts/j2s7rn_5Frs" target="_blank" rel="noopener" aria-label="ชมคลิปแนะนำตัวบน YouTube">
+        <span class="play-sm" aria-hidden="true"></span>
+        <span class="intro-text"><strong>คลิปแนะนำตัว 60 วินาที</strong> · ชมบน YouTube</span>
+      </a>
     </div>
     <figure class="photo-frame">
       <img src="509313071_10233500397284836_262950069320019830_n.jpg" alt="KuanHsiang Liu (Kent)">
@@ -1778,6 +1827,10 @@
         <span class="sep">✦</span>
         <span>應徵：電腦教師（程式設計與機器人）— Montfort College Primary，2026 年 5 月</span>
       </div>
+      <a class="intro-link" href="https://youtube.com/shorts/j2s7rn_5Frs" target="_blank" rel="noopener" aria-label="在 YouTube 上觀看自我介紹短片">
+        <span class="play-sm" aria-hidden="true"></span>
+        <span class="intro-text"><strong>60 秒自我介紹</strong> · 於 YouTube 觀看</span>
+      </a>
     </div>
     <figure class="photo-frame">
       <img src="509313071_10233500397284836_262950069320019830_n.jpg" alt="KuanHsiang Liu (Kent)">
@@ -2455,6 +2508,10 @@
         <span class="sep">✦</span>
         <span>Applying: Computer Teacher (Coding &amp; Robotics) — Montfort College Primary, May 2026</span>
       </div>
+      <a class="intro-link" href="https://youtube.com/shorts/j2s7rn_5Frs" target="_blank" rel="noopener" aria-label="Watch introduction on YouTube">
+        <span class="play-sm" aria-hidden="true"></span>
+        <span class="intro-text"><strong>60-sec Self-Introduction</strong> · Watch on YouTube</span>
+      </a>
     </div>
     <figure class="photo-frame">
       <img src="509313071_10233500397284836_262950069320019830_n.jpg" alt="KuanHsiang Liu (Kent)">
